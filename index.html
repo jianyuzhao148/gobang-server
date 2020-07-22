@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://127.0.0.1:8081/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io('http://127.0.0.1:8081/gobang');
+        let color = null;
+        let roomNum = null;
+        socket.on("100", (data) => {
+            console.log("游戏开始请求响应：", data);
+            color = data.color;
+            roomNum = data.roomNum;
+            if (data.state == color) {
+                console.log("我方黑棋,我方先手");
+                
+            } else {
+                console.log("我方白棋，我方后手");
+            }
+        });
+
+        socket.on("200", (data) => {
+            console.log("计时器响应：", data);
+
+        });
+
+        socket.on("300", (data) => {
+            console.log("游戏操作响应：", data);
+            if (data.result == 0) {//fall
+                console.log("落子成功");
+            }
+            if (data.result == 1) {//not
+                alert("该位置已有棋子")
+            }
+        });
+
+        socket.on("500", (data) => {
+            console.log("游戏结果响应：", data);
+                console.log(data.winner + "胜利");
+                color = null;
+                roomNum = null;
+                state=null;
+        });
+
+        function startPice() {
+            console.log("开始匹配");
+            socket.emit("100", "89");
+        }
+
+        function sumit() {
+            let textx = document.getElementById("textx").value;
+            let texty = document.getElementById("texty").value;
+            socket.emit("300", { "roomNum": roomNum, "color": color, "locationX": textx, "locationY": texty });
+        }
+    </script>
+</head>
+
+<body>
+    <button type="button" id="button" onclick="startPice()">开始匹配</button>
+
+    <br />
+
+    X:<textarea rows="1" id="textx" cols="10"></textarea>
+    Y:<textarea rows="1" id="texty" cols="10"></textarea>
+
+    <button type="button" id="button2" onclick="sumit()">下棋</button>
+
+</body>
+
+</html>

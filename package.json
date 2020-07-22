@@ -1,0 +1,28 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "工具",
+  "main": "index.js",
+  "dependencies": {
+    "autocannon": "^5.0.1",
+    "config": "^3.3.1",
+    "log4js": "^6.3.0",
+    "mysql": "^2.18.1",
+    "redis": "^3.0.2",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "sticky-session": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.36",
+    "@types/mysql": "^2.15.15",
+    "@types/redis": "^2.8.25",
+    "@types/socket.io": "^2.1.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

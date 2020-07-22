@@ -1,0 +1,52 @@
+{
+    "mysql": {
+        "password": "001016",
+        "database": "gobang",
+        "host": "127.0.0.1",
+        "user": "root",
+        "connectionLimit": 10
+    },
+    "config": {
+        "database": "mysql",
+        "cache": "redis"
+    },
+    "game": {
+        "Timer": 30,
+        "startX": 21,
+        "startY": 321,
+        "side": 43
+    },
+    "redis": {
+        "host": "127.0.0.1",
+        "port": 6379
+    },
+    "log4js": {
+        "appenders": {
+            "out": {
+                "type": "stdout",
+                "layout": {
+                    "type": "pattern",
+                    "pattern": "%[  [%p] [%d] [%f %l%o] [进程ID：%z] -- %m%n %]"
+                }
+            },
+            "file": {
+                "type": "file",
+                "filename": "log/log.log",
+                "layout": {
+                    "type": "pattern",
+                    "pattern": "%[  [%p] [%d] [%f %l%o] [进程ID：%z] -- %m%n %]"
+                }
+            }
+        },
+        "categories": {
+            "default": {
+                "appenders": [
+                    "out",
+                    "file"
+                ],
+                "level": "debug",
+                "enableCallStack": true
+            }
+        }
+    }
+}
