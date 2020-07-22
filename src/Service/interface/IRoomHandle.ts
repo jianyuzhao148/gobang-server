@@ -39,7 +39,7 @@ export interface IRoomHandle {
      * @param magNum 
      * @param data 
      */
-    roomMassage(roomNum: string, magNum: number, data: any): void;
+    roomMessage(nameSpace:string,roomNum: string, magNum: number, data: any): void;
 
     /**
      * 发送房间私人消息
@@ -47,7 +47,7 @@ export interface IRoomHandle {
      * @param msgNum 
      * @param data 
      */
-    roomMassageTo(socketid: any, msgNum: number, data: any): void;
+    roomMessageTo(nameSpace:string,socketid: any, msgNum: number, data: any): void;
 
     /**
      * 获得房间信息

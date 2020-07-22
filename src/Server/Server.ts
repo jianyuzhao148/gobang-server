@@ -1,10 +1,8 @@
 import socket from "socket.io";
 import http from "http";
-import { IRoomHandle } from "../Service/interface/IRoomHandle";
+import { Global } from "../Global/Global";
 import { RoomHandle } from "../Service/RoomHandle";
 import { GobangRoom } from "../Game/data/GobangRoom";
-import { Factory } from "../Dao/Factory";
-import { ICache } from "../Dao/interface/ICache";
 
 export class Server {
     private httpServer = http.createServer();
@@ -16,11 +14,20 @@ export class Server {
     }
 
     public async startWorker() {
-        // this.io.of("gobang").on("connection", async (socket) => {
-        let roomHandle: IRoomHandle = new RoomHandle({ id: "test" }, this.io);
-        let test=await roomHandle.matchRoom("5");
-        // });
-        console.log();
+        this.io.of("gobang").on("connection", async (socket) => {
+            let roomHandle=new RoomHandle(socket,this.io);
+            socket.on("1",async ()=>{
+                Global.getLogger().info(socket.id+"进入游戏");
+                roomHandle.roomMessageTo("gobang",socket.id,1,await roomHandle.roomList());
+            });
+
+            socket.on("2",async (data)=>{
+                let room=await roomHandle.createRoom(data.userId,new GobangRoom());
+                if(room!=0){
+                    roomHandle.roomMessageTo("gobang",socket.id,2,room.roomNum);
+                }
+            });
+        });
     }
 }
 new Server();

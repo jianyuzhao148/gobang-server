@@ -147,9 +147,10 @@ export class RoomHandle implements IRoomHandle {
      * @param roomNum 
      * @param magNum 
      * @param data 
+     * @param nameSpace
      */
-    public roomMassage(roomNum: string, magNum: number, data: any): void {
-        this.io.to(roomNum).emit(magNum, data);
+    public roomMessage(nameSpace:string,roomNum: string, magNum: number, data: any): void {
+        this.io.of(nameSpace).to(roomNum).emit(magNum, data);
     }
 
     /**
@@ -157,9 +158,10 @@ export class RoomHandle implements IRoomHandle {
      * @param socketid 
      * @param msgNum 
      * @param data 
+     * @param nameSpace
      */
-    public roomMassageTo(socketid: any, msgNum: number, data: any): void {
-        this.io.to(socketid).emit(msgNum, data);
+    public roomMessageTo(nameSpace:string,socketid: any, msgNum: number, data: any): void {
+        this.io.of(nameSpace).to(socketid).emit(msgNum, data);
     }
 
     /**

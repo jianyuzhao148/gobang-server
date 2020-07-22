@@ -10,13 +10,41 @@
         const socket = io('http://127.0.0.1:8081/gobang');
         let color = null;
         let roomNum = null;
+
+        window.onload = function () {
+            socket.emit("1");//请求房间列表
+        }
+
+        socket.on("1", (data) => {
+            if (data.length > 0) {
+                console.log(data);
+                for (let i = 0; i < data.length; i++) {
+                    let li = document.createElement("li");
+                    li.innerHTML = JSON.parse(data[i]).roomNum;
+                    document.getElementById("gameList").appendChild(li);
+                }
+            } else {
+                document.getElementById("span").textContent = "暂无房间"
+            }
+        });
+
+        function createRoom() {
+            socket.emit("2", { userId: "1" });//模拟登录后的创建操作
+        }
+
+        socket.on("2", (data) => {
+            document.getElementById("roomNum").textContent = "房间号为" + data;
+            console.log(data);
+        })
+
+
         socket.on("100", (data) => {
             console.log("游戏开始请求响应：", data);
             color = data.color;
             roomNum = data.roomNum;
             if (data.state == color) {
                 console.log("我方黑棋,我方先手");
-                
+
             } else {
                 console.log("我方白棋，我方后手");
             }
@@ -39,10 +67,10 @@
 
         socket.on("500", (data) => {
             console.log("游戏结果响应：", data);
-                console.log(data.winner + "胜利");
-                color = null;
-                roomNum = null;
-                state=null;
+            console.log(data.winner + "胜利");
+            color = null;
+            roomNum = null;
+            state = null;
         });
 
         function startPice() {
@@ -55,19 +83,37 @@
             let texty = document.getElementById("texty").value;
             socket.emit("300", { "roomNum": roomNum, "color": color, "locationX": textx, "locationY": texty });
         }
+
     </script>
 </head>
 
 <body>
-    <button type="button" id="button" onclick="startPice()">开始匹配</button>
+    <div>
+        <h3>房间列表</h3>
+        <span id="span"></span>
+        <ui id="gameList"></ui>
+    </div>
+    <div>
+        <button type="button" id="button" onclick="startPice()">快速开始</button>
+        <button type="button" id="button" onclick="createRoom()">创建房间</button>
+        <textarea rows="1" id="textx" cols="10"></textarea><button type="button" id="button"
+            onclick="startPice()">加入房间</button>
+    </div>
 
     <br />
+
+    <span id="roomNum">
+
+    </span>
+
+
+
+
 
     X:<textarea rows="1" id="textx" cols="10"></textarea>
     Y:<textarea rows="1" id="texty" cols="10"></textarea>
 
     <button type="button" id="button2" onclick="sumit()">下棋</button>
-
 </body>
 
 </html>
