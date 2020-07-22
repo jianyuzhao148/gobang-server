@@ -3,6 +3,8 @@ import http from "http";
 import { IRoomHandle } from "../Service/interface/IRoomHandle";
 import { RoomHandle } from "../Service/RoomHandle";
 import { GobangRoom } from "../Game/data/GobangRoom";
+import { Factory } from "../Dao/Factory";
+import { ICache } from "../Dao/interface/ICache";
 
 export class Server {
     private httpServer = http.createServer();
@@ -16,9 +18,7 @@ export class Server {
     public async startWorker() {
         // this.io.of("gobang").on("connection", async (socket) => {
         let roomHandle: IRoomHandle = new RoomHandle({ id: "test" }, this.io);
-        let tes2t = await roomHandle.createRoom("1", new GobangRoom());
-        await roomHandle.joinRoom(tes2t.roomNum, "3");//加入房间
-        setTimeout(await roomHandle.outRoom(tes2t.roomNum, "3"), 30000);//30秒后退出房间
+        let test=await roomHandle.matchRoom("5");
         // });
         console.log();
     }

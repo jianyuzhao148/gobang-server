@@ -22,7 +22,7 @@ export class Redis implements ICache {
      * @param key 
      * @param min 
      * @param max 
-     * @return boolean
+     * @returns 0/result
      */
     public getAll(key: string, min = "0", max = "-1"): Promise<any> {
         let promise = new Promise(async (resolve, reject) => {
@@ -30,9 +30,14 @@ export class Redis implements ICache {
                 if (error) {
                     this.logger.debug(error);
                     this.logger.info("获取缓存错误");
+                    resolve(0);
                 } else {
-                    this.logger.info("获取缓存成功" + " Key: " + key);
-                    resolve(result);
+                    if (result instanceof Array && result.length > 0) {
+                        resolve(result);
+                    } else {
+                        resolve(0);
+                        this.logger.info(key+" 缓存数为0");
+                    }
                 }
             });
         });
@@ -43,6 +48,7 @@ export class Redis implements ICache {
      * 获得指定分数缓存
      * @param key 键
      * @param element 元素
+     * @returns 0/result
      */
     public getById(key: string, min: string, max: string): Promise<any> {
         let promise = new Promise(async (resolve, reject) => {
@@ -50,12 +56,12 @@ export class Redis implements ICache {
                 if (error) {
                     this.logger.debug(error);
                     this.logger.info("获取缓存错误");
+                    resolve(0);
                 } else {
                     if (result instanceof Array && result.length > 0) {
-                        this.logger.info("获取缓存成功" + " value: " + result);
                         resolve(result);
                     } else {
-                        this.logger.info("缓存不存在" + " value: " + result);
+                        this.logger.info(key+" 缓存数为0");
                         resolve(0);
                     }
                 }
@@ -69,6 +75,7 @@ export class Redis implements ICache {
      * @param key 键
      * @param min 最小分数
      * @param max 最大分数
+     * @returns 0/1
      */
     public remById(key: string, min: string, max: string): Promise<any> {
         let promise = new Promise(async (resolve, reject) => {
@@ -76,10 +83,10 @@ export class Redis implements ICache {
                 if (error) {
                     this.logger.debug(error);
                     this.logger.info("删除缓存错误");
-                    resolve(result);
+                    resolve(0);
                 } else {
                     resolve(result);
-                    this.logger.info("删除缓存成功" + " Key: " + key);
+                    this.logger.info("删除缓存"+min+"~"+max+"成功");
                 }
             });
         });
@@ -87,10 +94,11 @@ export class Redis implements ICache {
     }
 
     /**
-     * 检查id重复，添加缓存
+     * 添加缓存
      * @param key 键
      * @param num 分数
      * @param data 元素
+     * @returns 0/1
      */
     public add(key: string, num: string, element: string): Promise<any> {
         let promise = new Promise(async (resolve, reject) => {
@@ -99,12 +107,13 @@ export class Redis implements ICache {
                     if (error) {
                         this.logger.debug(error);
                         this.logger.info("添加缓存错误");
+                        resolve(0);
                     } else {
                         resolve(result);
                         this.logger.info("添加缓存成功" + " value: " + element);
                     }
                 });
-            }else{
+            } else {
                 this.logger.info("添加缓存错误,ID重复");
             }
         });
