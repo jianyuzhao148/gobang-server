@@ -1,4 +1,5 @@
 import { Room } from "../base/Room";
+import { User } from "../base/User";
 
 export interface IRoomHandle {
 
@@ -7,20 +8,20 @@ export interface IRoomHandle {
      * @param userId 
      * @param room 
      */
-    createRoom(userId: string, room: Room): Promise<any>;
+    createRoom(user: User, room: Room): Promise<any>;
 
     /**
      * 匹配房间
      * @param userId 
      */
-    matchRoom(userId: string): Promise<any>;
+    matchRoom(user: User): Promise<any>;
 
     /**
      * 加入房间
      * @param roomNum 
      * @param userId 
      */
-    joinRoom(roomNum: string, userId: string): Promise<any>;
+    joinRoom(roomNum: string, user: User): Promise<any>;
 
     /**
      * 退出房间
@@ -32,22 +33,6 @@ export interface IRoomHandle {
      * 房间列表
      */
     roomList(): Promise<any>;
-
-    /**
-     * 发送房间消息
-     * @param roomNum 
-     * @param magNum 
-     * @param data 
-     */
-    roomMessage(nameSpace:string,roomNum: string, magNum: number, data: any): void;
-
-    /**
-     * 发送房间私人消息
-     * @param socketid
-     * @param msgNum 
-     * @param data 
-     */
-    roomMessageTo(nameSpace:string,socketid: any, msgNum: number, data: any): void;
 
     /**
      * 获得房间信息

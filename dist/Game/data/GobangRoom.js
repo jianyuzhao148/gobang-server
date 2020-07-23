@@ -15,7 +15,7 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.GobangRoom = void 0;
 var ChessBoard_1 = require("./ChessBoard");
-var Room_1 = require("../../Dao/base/Room");
+var Room_1 = require("../../Service/base/Room");
 var GobangRoom = /** @class */ (function (_super) {
     __extends(GobangRoom, _super);
     function GobangRoom() {

@@ -1,3 +1,4 @@
+import socket from "socket.io";
 export abstract class User {
     private _id: string = "";
     public get id() {
@@ -5,6 +6,14 @@ export abstract class User {
     }
     public set id(id: string) {
         this._id = id
+    }
+
+    private _socketid: any;
+    public get socketid() {
+        return this._socketid;
+    }
+    public set socketid(socketid: any) {
+        this._socketid = socketid
     }
 
     private _name: string = "";

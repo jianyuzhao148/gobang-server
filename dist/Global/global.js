@@ -10,15 +10,21 @@ var config_1 = __importDefault(require("config"));
 var Global = /** @class */ (function () {
     function Global() {
     }
+    /**
+     * 获取日志操作
+     */
     Global.getLogger = function () {
         log4js_1.configure(Global.getConfig().get("log4js"));
         var logger = log4js_1.getLogger();
         return logger;
     };
+    /**
+     * 获取配置操作
+     */
     Global.getConfig = function () {
         return config_1.default;
     };
     return Global;
 }());
 exports.Global = Global;
-//# sourceMappingURL=global.js.map
+//# sourceMappingURL=Global.js.map

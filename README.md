@@ -1,8 +1,9 @@
 问题：
 
     后台以二维数组存储导致房间缓存过大
-    cache缓存过多时处理
+
     匹配时候取消（强制退出）处理
+
     下棋是是否可使用： 
         //发送确认信息
         socket.emit（'question'，'您认为吗？'，function（answer） {}）;
@@ -14,47 +15,49 @@
 
     主缓存策略问题：会产生缓存穿透等问题
 
-    
-    
+    运行时redis允许键过期通知 config set notify-keyspace-events Ex
 
 消息号：
-    1进入游戏请求
-    10提示返回
-    100开始游戏返回{roomNum, colors, state=color}
-    200计时器返回
-    300游戏操作返回
-    500游戏结果返回 
 
+    登录
+        0登录请求         
 
+    房间操作
+        1进入游戏请求     返回房间列表
+        2创建房间         返回房间号码
+        3快速开始         返回房间号码
+        4加入房间         返回房间号码
+        5退出房间         返回结果
 
+    游戏操作    
+        100开始游戏       返回玩家颜色分配先后
+        200计时器
+        300游戏操作
+        500游戏结果 
 
-运行时redis允许键过期通知 config set notify-keyspace-events Ex
+架构
+    Dao 底层数据库交互
+        interface
+            ICache 
+            IDataBase
 
+            CacheImpl
+            DataBaseImpl
 
-Dao 底层数据库交互，日志多
-    interface
-        ICache 
-        IDataBase
-    implement
-        CacheImpl
-        DataBaseImpl
-Manage 缓存方案：mysql+redis
+    Manage 缓存方案：mysql+redis
 
-Service 提供服务：RoomHandle
+    Service 提供服务：RoomHandle
 
-Game 游戏逻辑 具体游戏
+    Game 游戏逻辑 具体游戏
 
-Server 服务器
+    Server 服务器
 
 技术栈：
+
     进程管理（集群）：PM2
     日志：log4js
 
-
-反思：返回值若为Promise则方法注释写好返回值
-
-
-
-
+反思：
+    返回值若为Promise则方法注释写好返回值防止遗忘后麻烦
 
     

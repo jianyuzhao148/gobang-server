@@ -7,13 +7,29 @@
     <title>Document</title>
     <script src="http://127.0.0.1:8081/socket.io/socket.io.js"></script>
     <script>
-        const socket = io('http://127.0.0.1:8081/gobang');
-        let color = null;
-        let roomNum = null;
-
+        letsocket = io('http://127.0.0.1:8081/gobang');
         window.onload = function () {
             socket.emit("1");//请求房间列表
         }
+
+        function createRoom() {
+            socket.emit("2", { userId: "1" });//模拟登录后的创建操作
+        }
+
+        function startPice() {
+            socket.emit("3", { userId: "1" });
+        }
+
+        function joinRoom() {
+            let roomNum = document.getElementById("roomNumText").value;
+            socket.emit("4", { roomNum: roomNum, userId: "1" });//模拟登录后的创建操作
+        }
+
+        // function outRoom(){
+        //     socket.emit("5", { roomNum: roomNum, userId: "1" });//模拟登录后的创建操作
+        // }
+
+
 
         socket.on("1", (data) => {
             if (data.length > 0) {
@@ -28,62 +44,55 @@
             }
         });
 
-        function createRoom() {
-            socket.emit("2", { userId: "1" });//模拟登录后的创建操作
-        }
-
         socket.on("2", (data) => {
             document.getElementById("roomNum").textContent = "房间号为" + data;
-            console.log(data);
+        })
+
+        socket.on("3", (data) => {
+            if (data != 0) {
+                document.getElementById("roomNum").textContent = "成功加入房间，房间号为" + data;
+            } else {
+                console.log("匹配失败")
+            }
+        })
+
+        socket.on("4", (data) => {
+            if (data != 0) {
+                document.getElementById("roomNum").textContent = "成功加入房间，房间号为" + data;
+            } else {
+                console.log("加入房间失败")
+            }
         })
 
 
-        socket.on("100", (data) => {
-            console.log("游戏开始请求响应：", data);
-            color = data.color;
-            roomNum = data.roomNum;
-            if (data.state == color) {
-                console.log("我方黑棋,我方先手");
 
-            } else {
-                console.log("我方白棋，我方后手");
-            }
-        });
+        // let color;
+        // let state;
 
-        socket.on("200", (data) => {
-            console.log("计时器响应：", data);
+        // socket.on("10", (data) => {
+        //     document.getElementById("roomNum").value=data.data;
+        // })
 
-        });
+        // function startGame() {
+        //     socket.emit("100", {userId:"5783918"});
+        // }
 
-        socket.on("300", (data) => {
-            console.log("游戏操作响应：", data);
-            if (data.result == 0) {//fall
-                console.log("落子成功");
-            }
-            if (data.result == 1) {//not
-                alert("该位置已有棋子")
-            }
-        });
+        // socket.on("100", (data) => {
+        //     console.log(data);
+        //     state=data.state;
+        //     color = data.color;
+        //     if (data.state == color) {
+        //         console.log("我方黑棋,我方先手");
 
-        socket.on("500", (data) => {
-            console.log("游戏结果响应：", data);
-            console.log(data.winner + "胜利");
-            color = null;
-            roomNum = null;
-            state = null;
-        });
-
-        function startPice() {
-            console.log("开始匹配");
-            socket.emit("100", "89");
-        }
-
-        function sumit() {
-            let textx = document.getElementById("textx").value;
-            let texty = document.getElementById("texty").value;
-            socket.emit("300", { "roomNum": roomNum, "color": color, "locationX": textx, "locationY": texty });
-        }
-
+        //     } else {
+        //         console.log("我方白棋，我方后手");
+        //     }
+        //     let i=0;
+        //     setInterval(()=>{
+        //         console.log(i);
+        //         i++;
+        //     },1000);
+        // });
     </script>
 </head>
 
@@ -94,10 +103,10 @@
         <ui id="gameList"></ui>
     </div>
     <div>
-        <button type="button" id="button" onclick="startPice()">快速开始</button>
-        <button type="button" id="button" onclick="createRoom()">创建房间</button>
-        <textarea rows="1" id="textx" cols="10"></textarea><button type="button" id="button"
-            onclick="startPice()">加入房间</button>
+        <textarea rows="1" id="roomNumText" cols="10"></textarea><button type="button" id="button"
+            onclick="joinRoom()">加入房间</button>
+        <button type="button" onclick="startPice()">快速开始</button>
+        <button type="button" onclick="createRoom()">创建房间</button>
     </div>
 
     <br />
@@ -105,15 +114,8 @@
     <span id="roomNum">
 
     </span>
-
-
-
-
-
-    X:<textarea rows="1" id="textx" cols="10"></textarea>
-    Y:<textarea rows="1" id="texty" cols="10"></textarea>
-
-    <button type="button" id="button2" onclick="sumit()">下棋</button>
+    <br />
+    <button type="button" onclick="outRoom()">退出房间</button>
 </body>
 
 </html>

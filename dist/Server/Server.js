@@ -42,7 +42,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Server = void 0;
 var socket_io_1 = __importDefault(require("socket.io"));
 var http_1 = __importDefault(require("http"));
-var Factory_1 = require("../Dao/Factory");
 var Server = /** @class */ (function () {
     function Server() {
         this.httpServer = http_1.default.createServer();
@@ -52,15 +51,42 @@ var Server = /** @class */ (function () {
     }
     Server.prototype.startWorker = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var test;
+            var _this = this;
             return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, Factory_1.Factory.getDataBase().updateById("update gobang.user set id=? where id=?", [1, 2])];
-                    case 1:
-                        test = _a.sent();
-                        console.log();
+                this.io.of("gobang").on("connection", function (socket) { return __awaiter(_this, void 0, void 0, function () {
+                    var _this = this;
+                    return __generator(this, function (_a) {
+                        console.log("a user connection");
+                        // let roomHandle = new RoomHandle(socket, this.io);
+                        // let gameHandle=new GameHandle(socket, this.io);
+                        // socket.on("1", async () => {
+                        //     Global.getLogger().info(socket.id + "进入游戏");
+                        //     roomHandle.roomMessageTo("gobang", socket.id, 1, await roomHandle.roomList());
+                        // });
+                        // socket.on("2", async (data) => {
+                        //     let room = await roomHandle.createRoom(data.userId, new GobangRoom());
+                        //     if (room != 0) {
+                        //         roomHandle.roomMessageTo("gobang", socket.id, 2, room.roomNum);
+                        //     }
+                        // });
+                        // socket.on("3", async (data) => {
+                        //     let roomNum = await roomHandle.matchRoom(data.userId);
+                        //     roomHandle.roomMessageTo("gobang", socket.id, 3, roomNum);
+                        // });
+                        // socket.on("4", async (data) => {
+                        //     let roomNum = await roomHandle.joinRoom(data.roomNum, data.userId);
+                        //     roomHandle.roomMessageTo("gobang", socket.id, 4, roomNum);
+                        // });
+                        // socket.on("100",async (data)=>{
+                        //     gameHandle.gameStart(data.userId);
+                        // });
+                        socket.on('disconnect', function (socket) {
+                            _this.io.close();
+                        });
                         return [2 /*return*/];
-                }
+                    });
+                }); });
+                return [2 /*return*/];
             });
         });
     };

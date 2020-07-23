@@ -25,13 +25,13 @@ var Global_1 = require("../Global/Global");
 var Mysql = /** @class */ (function () {
     function Mysql() {
         this.Logger = Global_1.Global.getLogger();
-        var config = Global_1.Global.getConfig();
+        this.config = Global_1.Global.getConfig();
         this.pool = mysql.createPool({
-            connectionLimit: config.get("mysql.connectionLimit"),
-            host: config.get("mysql.host"),
-            user: config.get("mysql.user"),
-            password: config.get("mysql.password"),
-            database: config.get("mysql.database")
+            connectionLimit: this.config.get("mysql.connectionLimit"),
+            host: this.config.get("mysql.host"),
+            user: this.config.get("mysql.user"),
+            password: this.config.get("mysql.password"),
+            database: this.config.get("mysql.database")
         });
     }
     /**
@@ -117,9 +117,11 @@ var Mysql = /** @class */ (function () {
                         if (error) {
                             _this.Logger.debug(error);
                             _this.Logger.info("更新数据错误");
+                            resolve(result);
                         }
                         else {
                             _this.Logger.info("更新数据成功," + "sql: " + sql + " sqlPara: " + sqlPara);
+                            resolve(result);
                         }
                     });
                 }
@@ -132,6 +134,7 @@ var Mysql = /** @class */ (function () {
      * 根据ID查询数据
      * @param sql
      * @param sqlPara
+     * @return JSONstring
      */
     Mysql.prototype.queryById = function (sql, sqlPara) {
         var _this = this;
@@ -148,8 +151,14 @@ var Mysql = /** @class */ (function () {
                             _this.Logger.info("查找数据错误");
                         }
                         else {
-                            _this.Logger.info("查找数据成功," + "sql: " + sql + " sqlPara: " + sqlPara);
-                            resolve(result);
+                            if (result.length > 0) {
+                                _this.Logger.info("查找数据成功," + "sql: " + sql + " sqlPara: " + sqlPara);
+                                resolve(JSON.stringify(result[0]));
+                            }
+                            else {
+                                _this.Logger.info("数据不存在," + "sql: " + sql + " sqlPara: " + sqlPara);
+                                resolve(0);
+                            }
                         }
                     });
                 }

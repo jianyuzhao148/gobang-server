@@ -40,8 +40,8 @@ exports.DataHandle = void 0;
 var Factory_1 = require("../Dao/Factory");
 /**
  * 数据操作
- * 缓存+主存配合实现增删改查
- * 弊端：操作主副的顺序
+ * 直接操作DAO，实现缓存+主存配合实现增删改查
+ * 弊端：操作主副的顺序,性能差但简单
  */
 var DataHandle = /** @class */ (function () {
     function DataHandle() {
@@ -49,7 +49,7 @@ var DataHandle = /** @class */ (function () {
         this.database = Factory_1.Factory.getDataBase(); //获取数据库单例
     }
     /**
-     * 添加数据
+     * 添加数据，直接写入主存
      * return 影响行数
      * @param sql
      * @param sqlParameter
@@ -71,7 +71,7 @@ var DataHandle = /** @class */ (function () {
         return promise;
     };
     /**
-     * 删除数据，检查缓存（删除缓存）删除数据
+     * 删除数据，删除缓存，删除数据
      * return 影响行数
      * @param sql
      * @param sqlParameter
@@ -85,19 +85,15 @@ var DataHandle = /** @class */ (function () {
                     var result;
                     return __generator(this, function (_a) {
                         switch (_a.label) {
-                            case 0: return [4 /*yield*/, this.cache.remByScore("cache", sqlParameter[0], sqlParameter[0])];
+                            case 0: return [4 /*yield*/, this.cache.remById("cache", sqlParameter[0], sqlParameter[0])];
                             case 1:
-                                if (!((_a.sent()) instanceof Array)) return [3 /*break*/, 3];
-                                return [4 /*yield*/, this.database.execute(sql, sqlParameter)];
+                                if (!_a.sent()) return [3 /*break*/, 3];
+                                return [4 /*yield*/, this.database.delById(sql, sqlParameter)];
                             case 2:
                                 result = _a.sent();
                                 resolve(result);
-                                return [3 /*break*/, 4];
-                            case 3:
-                                console.log("删除缓存失败");
-                                resolve(0);
-                                _a.label = 4;
-                            case 4: return [2 /*return*/];
+                                _a.label = 3;
+                            case 3: return [2 /*return*/];
                         }
                     });
                 }); });
@@ -108,16 +104,16 @@ var DataHandle = /** @class */ (function () {
     /**
      * 更新数据
      */
-    DataHandle.prototype.updata = function (sql, sqlParameter) {
+    DataHandle.prototype.update = function (sql, sqlParameter) {
         var _this = this;
         var promise = new Promise(function (resolve, reject) { return __awaiter(_this, void 0, void 0, function () {
             var result;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.cache.remByScore("cache", sqlParameter[sqlParameter.length - 1], sqlParameter[sqlParameter.length - 1])];
+                    case 0: return [4 /*yield*/, this.cache.remById("cache", sqlParameter[sqlParameter.length - 1], sqlParameter[sqlParameter.length - 1])];
                     case 1:
-                        if (!((_a.sent()) instanceof Array)) return [3 /*break*/, 3];
-                        return [4 /*yield*/, this.database.execute(sql, sqlParameter)];
+                        if (!_a.sent()) return [3 /*break*/, 3];
+                        return [4 /*yield*/, this.database.updateById(sql, sqlParameter)];
                     case 2:
                         result = _a.sent();
                         resolve(result);
@@ -134,7 +130,6 @@ var DataHandle = /** @class */ (function () {
     };
     /**
      * 查询数据
-     * 查询缓存（查询主存）
      */
     DataHandle.prototype.query = function (sql, sqlParameter) {
         var _this = this;
@@ -142,19 +137,17 @@ var DataHandle = /** @class */ (function () {
             var getCache, data;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.cache.remByScore("cache", sqlParameter[sqlParameter.length - 1], sqlParameter[sqlParameter.length - 1])];
+                    case 0: return [4 /*yield*/, this.cache.getById("cache", sqlParameter[sqlParameter.length - 1], sqlParameter[sqlParameter.length - 1])];
                     case 1:
                         getCache = _a.sent();
-                        if (!(getCache != 0 && getCache.length > 0)) return [3 /*break*/, 2];
+                        if (!(getCache != 0)) return [3 /*break*/, 2];
                         resolve(getCache);
                         return [3 /*break*/, 4];
-                    case 2:
-                        console.log("缓存不存在");
-                        return [4 /*yield*/, this.database.execute(sql, sqlParameter)];
+                    case 2: return [4 /*yield*/, this.database.queryById(sql, sqlParameter)];
                     case 3:
                         data = _a.sent();
-                        if (data != 0 && data.length > 0) {
-                            this.cache.add("cache", data.id, data); //写入缓存
+                        if (data) {
+                            this.cache.add("cache", JSON.parse(data).id, data); //写入缓存
                             resolve(data);
                         }
                         _a.label = 4;

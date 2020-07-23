@@ -72,6 +72,7 @@ var Redis = /** @class */ (function () {
      * @param key
      * @param min
      * @param max
+     * @returns 0/result
      */
     Redis.prototype.getAll = function (key, min, max) {
         var _this = this;
@@ -84,10 +85,16 @@ var Redis = /** @class */ (function () {
                     if (error) {
                         _this.logger.debug(error);
                         _this.logger.info("获取缓存错误");
+                        resolve(0);
                     }
                     else {
-                        resolve(result);
-                        _this.logger.info("获取缓存成功" + " Key: " + key);
+                        if (result instanceof Array && result.length > 0) {
+                            resolve(result);
+                        }
+                        else {
+                            resolve(0);
+                            _this.logger.info(key + " 缓存数为0");
+                        }
                     }
                 });
                 return [2 /*return*/];
@@ -99,6 +106,7 @@ var Redis = /** @class */ (function () {
      * 获得指定分数缓存
      * @param key 键
      * @param element 元素
+     * @returns 0/result
      */
     Redis.prototype.getById = function (key, min, max) {
         var _this = this;
@@ -109,10 +117,16 @@ var Redis = /** @class */ (function () {
                     if (error) {
                         _this.logger.debug(error);
                         _this.logger.info("获取缓存错误");
+                        resolve(0);
                     }
                     else {
-                        resolve(result);
-                        _this.logger.info("获取缓存成功" + " Key: " + key);
+                        if (result instanceof Array && result.length > 0) {
+                            resolve(result);
+                        }
+                        else {
+                            _this.logger.info(key + " 缓存数为0");
+                            resolve(0);
+                        }
                     }
                 });
                 return [2 /*return*/];
@@ -125,6 +139,7 @@ var Redis = /** @class */ (function () {
      * @param key 键
      * @param min 最小分数
      * @param max 最大分数
+     * @returns 0/1
      */
     Redis.prototype.remById = function (key, min, max) {
         var _this = this;
@@ -134,11 +149,12 @@ var Redis = /** @class */ (function () {
                 this.redisClient.zremrangebyscore(key, min, max, function (error, result) {
                     if (error) {
                         _this.logger.debug(error);
-                        _this.logger.info("获取缓存错误");
+                        _this.logger.info("删除缓存错误");
+                        resolve(0);
                     }
                     else {
                         resolve(result);
-                        _this.logger.info("删除缓存成功" + " Key: " + key);
+                        _this.logger.info("删除缓存" + min + "~" + max + "成功");
                     }
                 });
                 return [2 /*return*/];
@@ -151,23 +167,34 @@ var Redis = /** @class */ (function () {
      * @param key 键
      * @param num 分数
      * @param data 元素
+     * @returns 0/1
      */
     Redis.prototype.add = function (key, num, element) {
         var _this = this;
         var promise = new Promise(function (resolve, reject) { return __awaiter(_this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
-                this.redisClient.zadd(key, num, element, function (error, result) {
-                    if (error) {
-                        _this.logger.debug(error);
-                        _this.logger.info("获取缓存错误");
-                    }
-                    else {
-                        resolve(result);
-                        _this.logger.info("添加缓存成功" + " Key: " + key);
-                    }
-                });
-                return [2 /*return*/];
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.getById(key, num, num)];
+                    case 1:
+                        if ((_a.sent()) == 0) { //检查id重复
+                            this.redisClient.zadd(key, num, element, function (error, result) {
+                                if (error) {
+                                    _this.logger.debug(error);
+                                    _this.logger.info("添加缓存错误");
+                                    resolve(0);
+                                }
+                                else {
+                                    resolve(result);
+                                    _this.logger.info("添加缓存成功" + " value: " + element);
+                                }
+                            });
+                        }
+                        else {
+                            this.logger.info("添加缓存错误,ID重复");
+                        }
+                        return [2 /*return*/];
+                }
             });
         }); });
         return promise;
