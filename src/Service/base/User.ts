@@ -5,15 +5,15 @@ export abstract class User {
         return this._id;
     }
     public set id(id: string) {
-        this._id = id
+        this._id = id;
     }
 
-    private _socketid: any;
-    public get socketid() {
-        return this._socketid;
+    private _password: string = "";
+    public get password() {
+        return this._password;
     }
-    public set socketid(socketid: any) {
-        this._socketid = socketid
+    public set password(password: string) {
+        this._password = password;
     }
 
     private _name: string = "";

@@ -64,6 +64,9 @@ export class DataHandle implements IDataHandle {
 
     /**
      * 查询数据
+     * Tip：保持查询需要的id在sqk参数最后一位
+     * @param sql 
+     * @param sqlParameter 
      */
     public query(sql: string, sqlParameter: Array<any>): Promise<any> {
         let promise = new Promise(async (resolve, reject) => {
@@ -75,6 +78,8 @@ export class DataHandle implements IDataHandle {
                 if (data) {
                     this.cache.add("cache",JSON.parse(data).id , data);//写入缓存
                     resolve(data);
+                }else{
+                    resolve(0);
                 }
             }
         });

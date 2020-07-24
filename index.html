@@ -7,29 +7,48 @@
     <title>Document</title>
     <script src="http://127.0.0.1:8081/socket.io/socket.io.js"></script>
     <script>
-        letsocket = io('http://127.0.0.1:8081/gobang');
+        let userId;
+        let color;
+        let roomNum;
+
+        let socket = io('http://127.0.0.1:8081/gobang');
+        function login() {
+            socket.emit("0", { userId: "1", password: "123" });//登录请求
+        }
+
         window.onload = function () {
             socket.emit("1");//请求房间列表
         }
 
         function createRoom() {
-            socket.emit("2", { userId: "1" });//模拟登录后的创建操作
+            socket.emit("2", { userId: userId });//模拟登录后的创建操作
         }
 
         function startPice() {
-            socket.emit("3", { userId: "1" });
+            socket.emit("3", { userId: userId });
         }
 
         function joinRoom() {
             let roomNum = document.getElementById("roomNumText").value;
-            socket.emit("4", { roomNum: roomNum, userId: "1" });//模拟登录后的创建操作
+            socket.emit("4", { roomNum: roomNum, userId: userId });//模拟登录后的创建操作
         }
+
 
         // function outRoom(){
         //     socket.emit("5", { roomNum: roomNum, userId: "1" });//模拟登录后的创建操作
         // }
 
 
+        socket.on("0", (data) => {
+            if (data != 0) {
+                console.log(data);
+                let user = JSON.parse(data);
+                userId = user.id;
+                document.getElementById("roomNum").textContent = userId + " 登录成功"
+            } else {
+                document.getElementById("roomNum").textContent = "登录失败"
+            }
+        });
 
         socket.on("1", (data) => {
             if (data.length > 0) {
@@ -50,6 +69,7 @@
 
         socket.on("3", (data) => {
             if (data != 0) {
+                roomNum = data;
                 document.getElementById("roomNum").textContent = "成功加入房间，房间号为" + data;
             } else {
                 console.log("匹配失败")
@@ -58,6 +78,7 @@
 
         socket.on("4", (data) => {
             if (data != 0) {
+                roomNum = data;
                 document.getElementById("roomNum").textContent = "成功加入房间，房间号为" + data;
             } else {
                 console.log("加入房间失败")
@@ -66,38 +87,43 @@
 
 
 
-        // let color;
-        // let state;
+        socket.on("10", (data) => {
+            document.getElementById("roomNum").value = data.data;
+        })
 
-        // socket.on("10", (data) => {
-        //     document.getElementById("roomNum").value=data.data;
-        // })
+        function startGame() {
+            socket.emit("100", { roomNum: roomNum });
+        }
 
-        // function startGame() {
-        //     socket.emit("100", {userId:"5783918"});
-        // }
-
-        // socket.on("100", (data) => {
-        //     console.log(data);
-        //     state=data.state;
-        //     color = data.color;
-        //     if (data.state == color) {
-        //         console.log("我方黑棋,我方先手");
-
-        //     } else {
-        //         console.log("我方白棋，我方后手");
-        //     }
-        //     let i=0;
-        //     setInterval(()=>{
-        //         console.log(i);
-        //         i++;
-        //     },1000);
-        // });
+        socket.on("100", (data) => {
+            console.log(data);
+            if (data != 0) {
+                color = data.color;
+                if (data.state == color) {
+                    console.log("我方黑棋,我方先手");
+                } else {
+                    console.log("我方白棋，我方后手");
+                }
+                let i = 0;
+                let timer = setInterval(() => {
+                    if (i < 30) {
+                        console.log(i);
+                        i++;
+                    } else {
+                        clearInterval(timer)
+                    }
+                }, 1000);
+            } else {
+                console.log("游戏开始失败")
+            }
+        });
     </script>
 </head>
 
 <body>
     <div>
+        <button type="button" onclick="login()">登录</button>
+        <br />
         <h3>房间列表</h3>
         <span id="span"></span>
         <ui id="gameList"></ui>
@@ -116,6 +142,10 @@
     </span>
     <br />
     <button type="button" onclick="outRoom()">退出房间</button>
+
+
+    <button type="button" onclick="startGame()">开始游戏</button>
+
 </body>
 
 </html>

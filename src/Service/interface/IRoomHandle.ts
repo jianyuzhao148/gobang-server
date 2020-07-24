@@ -1,33 +1,35 @@
 import { Room } from "../base/Room";
-import { User } from "../base/User";
+import socket from "socket.io";
 
 export interface IRoomHandle {
 
     /**
      * 创建房间
-     * @param userId 
-     * @param room 
+     * @param userId
+     * @param socketid 
      */
-    createRoom(user: User, room: Room): Promise<any>;
+    createRoom(userId: string, socket: socket.Socket): Promise<any>;
 
     /**
      * 匹配房间
-     * @param userId 
+     * @param user
+     * @param socketid 
      */
-    matchRoom(user: User): Promise<any>;
+    matchRoom(userId: string, socket: socket.Socket): Promise<any>;
 
     /**
      * 加入房间
      * @param roomNum 
-     * @param userId 
+     * @param user 
+     * @param socketid 
      */
-    joinRoom(roomNum: string, user: User): Promise<any>;
+    joinRoom(roomNum: string, userId: string, socket: socket.Socket): Promise<any>;
 
     /**
      * 退出房间
      * @param roomNum 
      */
-    outRoom(roomNum: string, userId: string):Promise<any>;
+    outRoom(roomNum: string, userId: string, socket: socket.Socket): Promise<any>;
 
     /**
      * 房间列表

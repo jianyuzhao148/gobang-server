@@ -2,20 +2,17 @@ import { IRoomHandle } from "../Service/interface/IRoomHandle";
 import { ITimer } from "../Service/interface/ITimer";
 import { RoomHandle } from "../Service/RoomHandle";
 import { Timer } from "../Service/Timer";
-import { ChessBoard } from "./data/ChessBoard";
-import { GameLogic } from "./GameLogic";
-import { Result } from "./data/Result";
 import { Logger } from "log4js";
 import { Global } from "../Global/Global";
 
 export class GameHandle {
     private roomHandle: IRoomHandle;
-    // private timer: ITimer;
+    private timer: ITimer;
     private logger: Logger;
 
     public constructor() {
         this.roomHandle = new RoomHandle();
-        // this.timer = new Timer("0", socket, io);
+        this.timer = new Timer("0");
         this.logger = Global.getLogger();
     }
 
@@ -26,21 +23,22 @@ export class GameHandle {
     public async gameStart(roomNum: string): Promise<any> {
         let promise = new Promise(async (resolve, reject) => {
             let roomObject = await this.roomHandle.getRoom(roomNum);
+            console.log(roomObject);
             let room = JSON.parse(roomObject);
             if (room.player.length >= 2) {
                 let color = this.setOrder();
                 room.player[0].colors = color;
                 room.player[1].colors = !color;
-                if (room.player[0].colors == true) {//更换操作位
+                if (room.player[0].colors == true) {//更换操作位,游戏开始当前操作位为黑棋
                     await this.exchangePosition(room.player);
-                    resolve({ "color": room.player[0].colors, "state": room.player[0].colors })
-                    // this.timer.setTimer(room.roomNum);//设置计时器
+                    this.timer.setTimer(room.roomNum);//设置计时器
                     this.roomHandle.reSetRoom(room);//不能直接传jsong   
+                    resolve(room);//返回房间
                     this.logger.info("房间：" + room.roomNum + "游戏开始");
-                } else {
-                    resolve(0);
-                    this.logger.info("房间：" + room.roomNum + "开始游戏失败");
                 }
+            } else {
+                resolve(0);
+                this.logger.info("房间：" + room.roomNum + "开始游戏失败");
             }
         });
         return promise;
@@ -79,7 +77,7 @@ export class GameHandle {
     /**
      * 分配先黑白棋
      */
-    public setOrder(): boolean {
+    private setOrder(): boolean {
         if (Math.round(Math.random()) == 1) {
             return true;
         } else {

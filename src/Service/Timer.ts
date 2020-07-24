@@ -2,20 +2,15 @@ import { ITimer } from "./interface/ITimer";
 import { Global } from "../Global/Global";
 import { Factory } from "../Dao/Factory";
 import { ICache } from "../Dao/interface/ICache";
-import { RoomHandle } from "./RoomHandle";
-import { Room } from "./base/Room";
 
 export class Timer implements ITimer {
     private cache: ICache;
-    private socket:any;
-    private io:any;
 
-    public constructor(cacheDataBase: string,socket:any,io:any) {
+    public constructor(cacheDataBase: string) {
         this.cache = Factory.getCache();
         //订阅键过期事件通知
+        this.cache.setConfig();
         this.cache.psubscribe("__keyevent@" + cacheDataBase + "__:expired");
-        this.socket=socket;
-        this.io=io;
     }
 
     /**
@@ -24,13 +19,7 @@ export class Timer implements ITimer {
      * @param key 键
      */
     public setTimer(key: string): void {
-        this.outTimer(async (message:any)=>{
-            let roomHandle=new RoomHandle(this.socket,this.io);
-            let room:Room=await roomHandle.getRoom(message);
-            roomHandle.roomMessage("gobang",room.roomNum,500,{winner:room.player[1].userId})
-        })
-        this.cache.setLimitKey(key, "", Global.getConfig().get("game.Timer"));
-        
+        this.cache.setLimitKey(key,"",Global.getConfig().get("game.Timer"));
     }
 
     /**

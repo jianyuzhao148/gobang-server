@@ -57,4 +57,9 @@ export interface ICache {
      * @param func 
      */
     getPSubscribe(func: Function): void;
+
+    /**
+     * 打开过期键监听
+     */
+    setConfig():void;
 }

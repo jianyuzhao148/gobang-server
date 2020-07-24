@@ -156,6 +156,15 @@ export class Redis implements ICache {
         });
     }
 
+    /**
+     * 打开过期键监听
+     */
+    public setConfig(){
+        this.redisClient.send_command('config', ['set', 'notify-keyspace-events', 'Ex']);
+    }
+
+
+
 
 
     // /**
