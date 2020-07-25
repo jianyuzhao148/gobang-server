@@ -10,6 +10,7 @@
         let userId;
         let color;
         let roomNum;
+        let timer;
 
         let socket = io('http://127.0.0.1:8081/gobang');
         function login() {
@@ -85,38 +86,61 @@
             }
         })
 
-
-
-        socket.on("10", (data) => {
-            document.getElementById("roomNum").value = data.data;
-        })
-
         function startGame() {
             socket.emit("100", { roomNum: roomNum });
         }
 
+        function ganeRequest() {
+            let x = 21 + Math.round(Math.random() * 601);
+            let y = 321 + Math.round(Math.random() * 601);
+            socket.emit("300", { roomNum: roomNum, color: color, locationX: x, locationY: y });
+        }
+
         socket.on("100", (data) => {
-            console.log(data);
             if (data != 0) {
                 color = data.color;
                 if (data.state == color) {
                     console.log("我方黑棋,我方先手");
+                    document.getElementById("gameRequst").removeAttribute("disabled");
                 } else {
                     console.log("我方白棋，我方后手");
                 }
-                let i = 0;
-                let timer = setInterval(() => {
-                    if (i < 30) {
-                        console.log(i);
-                        i++;
-                    } else {
-                        clearInterval(timer)
-                    }
-                }, 1000);
+                timers();
             } else {
                 console.log("游戏开始失败")
             }
         });
+
+        socket.on("300", (data) => {
+            if (data.result == 0) {
+                if (data.state == color) {//当前操作位
+                    document.getElementById("gameRequst").removeAttribute("disabled");//设置按钮可用
+                } else {
+                    document.getElementById("gameRequst").setAttribute("disabled", true);//设置按钮不可用
+                }
+            } else if (data.result == 1) {
+                alert("当前位置已有棋子不能下棋")
+            }
+
+        });
+
+        socket.on("500", (data) => {
+            console.log("游戏结束，" + data.winner + " 获胜")
+            document.getElementById("roomNum").value = "游戏结束，" + data.winner + " 获胜";
+            clearInterval(timer)
+        })
+
+        function timers() {//计时器
+            let i = 0;
+            timer = setInterval(() => {
+                if (i < 30) {
+                    console.log(i);
+                    i++;
+                } else {
+                    clearInterval(timer)
+                }
+            }, 1000);
+        }
     </script>
 </head>
 
@@ -143,8 +167,11 @@
     <br />
     <button type="button" onclick="outRoom()">退出房间</button>
 
-
+    <br />
     <button type="button" onclick="startGame()">开始游戏</button>
+
+    <br />
+    <button type="button" id="gameRequst" disabled="disabled" onclick="ganeRequest()">模拟游戏请求</button>
 
 </body>
 

@@ -7,6 +7,7 @@ import { IRoomHandle } from "../Service/interface/IRoomHandle";
 import { ITimer } from "../Service/interface/ITimer";
 import { Timer } from "../Service/Timer";
 import { Room } from "../Service/base/Room";
+import { Result } from "../Game/data/Result";
 
 export class Server {
     private roomHandle: IRoomHandle;
@@ -22,12 +23,18 @@ export class Server {
         this.gameHandle = new GameHandle()
         this.loginHandle = new LoginHandle();
         this.timer = new Timer("0");
-
         this.httpServer.listen(8081);
         this.startWorker();
     }
 
     public async startWorker() {
+        this.timer.outTimer(async (message: any) => {//避免被重复声明，或放在监听器中
+            let roomObject = await this.roomHandle.getRoom(message);
+            let room: Room = JSON.parse(roomObject);
+            this.io.of("gobang").to(room.roomNum).emit("500", { winner: room.player[1].colors });
+            this.timer.stopTimer(message);
+        });
+
         this.io.of("gobang").on("connection", async (socket: socket.Socket) => {
 
             socket.on("0", async (data) => {//登陆响应
@@ -59,21 +66,23 @@ export class Server {
 
             // });
 
-            this.timer.setTimer("test");
-            this.timer.outTimer((message: any) => {
-                this.timer.stopTimer(message);
-                console.log(message);
-            });
-
-            socket.on("100",async (data)=>{
-                let room=await this.gameHandle.gameStart(data.roomNum);
-                if(room!=0){//游戏开始成功
-                    this.io.of("gobang").to(room.player[0].socketId).emit("100", {color:false,state:false});//广播房间消息
-                    this.io.of("gobang").to(room.player[1].socketId).emit("100", {color:true,state:false});//广播房间消息
-                }else{
+            socket.on("100", async (data) => {
+                let room = await this.gameHandle.gameStart(data.roomNum);
+                if (room != 0) {//游戏开始成功
+                    this.io.of("gobang").to(room.player[0].socketId).emit("100", { color: false, state: false });//广播房间消息
+                    this.io.of("gobang").to(room.player[1].socketId).emit("100", { color: true, state: false });//广播房间消息
+                } else {
                     this.io.of("gobang").to(data).emit("100", 0);//广播房间消息
                 }
             });
+
+            socket.on("300", async (data) => {
+                let opationResult=await this.gameHandle.playGame(data.roomNum, data.color, data.locationX, data.locationY);
+                if(opationResult.result==Result.WIN){
+                    this.io.of("gobang").to(data.roomNum).emit("500", opationResult);//广播房间消息
+                }
+                this.io.of("gobang").to(data.roomNum).emit("300", opationResult);//广播房间消息
+            })
         });
     }
 }

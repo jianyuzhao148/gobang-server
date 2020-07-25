@@ -1598,3 +1598,619 @@ Only strings, dates and buffers are accepted. Please update your code to use val
  [39m
 [32m  [INFO] [2020-07-24T19:01:48.405] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：2088] -- 删除键成功 Key: test
  [39m
+[32m  [INFO] [2020-07-25T11:47:02.360] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：11492] -- 删除键成功 Key: test
+ [39m
+[32m  [INFO] [2020-07-25T12:11:47.422] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：10748] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T12:11:49.684] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：10748] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T12:11:51.686] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：10748] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:11:51.688] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：10748] -- 添加缓存成功 value: {"roomNum":"5167989","player":[{"userId":"1","socketId":"/gobang#gyR0_m7h4JgtsY16AAAA"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:11:51.700] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：10748] -- 用户: 1 创建房间：5167989 成功
+ [39m
+[32m  [INFO] [2020-07-25T12:11:53.913] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：10748] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T12:11:53.916] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：10748] -- 删除缓存5167989~5167989成功
+ [39m
+[32m  [INFO] [2020-07-25T12:11:53.931] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：10748] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:11:53.933] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：10748] -- 添加缓存成功 value: {"roomNum":"5167989","player":[{"userId":"1","socketId":"/gobang#gyR0_m7h4JgtsY16AAAA"},{"userId":"1","socketId":"/gobang#nVObNSn5E6kqzokxAAAB"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:11:53.935] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：10748] -- 用户：1成功加入房间：5167989
+ [39m
+[32m  [INFO] [2020-07-25T12:12:24.022] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 3733] [进程ID：10748] -- 房间：5167989游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T12:12:24.031] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：10748] -- 删除缓存5167989~5167989成功
+ [39m
+[32m  [INFO] [2020-07-25T12:12:24.033] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：10748] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:12:24.034] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：10748] -- 添加缓存成功 value: {"roomNum":"5167989","player":[{"userId":"1","socketId":"/gobang#nVObNSn5E6kqzokxAAAB","colors":false},{"userId":"1","socketId":"/gobang#gyR0_m7h4JgtsY16AAAA","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:12:54.033] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：10748] -- 删除键成功 Key: 5167989
+ [39m
+[32m  [INFO] [2020-07-25T12:14:57.850] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：12504] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T12:14:59.698] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：12504] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T12:15:02.616] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：12504] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T12:15:02.617] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6937] [进程ID：12504] -- 用户：1匹配失败暂无合适房间
+ [39m
+[32m  [INFO] [2020-07-25T12:15:04.988] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：12504] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:15:04.991] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：12504] -- 添加缓存成功 value: {"roomNum":"498328","player":[{"userId":"1","socketId":"/gobang#GoAFT23AwXLkU99_AAAC"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:15:04.999] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：12504] -- 用户: 1 创建房间：498328 成功
+ [39m
+[32m  [INFO] [2020-07-25T12:15:06.905] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：12504] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T12:15:06.908] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：12504] -- 删除缓存498328~498328成功
+ [39m
+[32m  [INFO] [2020-07-25T12:15:06.922] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：12504] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:15:06.923] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：12504] -- 添加缓存成功 value: {"roomNum":"498328","player":[{"userId":"1","socketId":"/gobang#GoAFT23AwXLkU99_AAAC"},{"userId":"1","socketId":"/gobang#xDhnvi0HZFex0SHkAAAD"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:15:06.926] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：12504] -- 用户：1成功加入房间：498328
+ [39m
+[32m  [INFO] [2020-07-25T12:15:10.339] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 3733] [进程ID：12504] -- 房间：498328游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T12:15:10.348] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：12504] -- 删除缓存498328~498328成功
+ [39m
+[32m  [INFO] [2020-07-25T12:15:10.350] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：12504] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:15:10.351] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：12504] -- 添加缓存成功 value: {"roomNum":"498328","player":[{"userId":"1","socketId":"/gobang#xDhnvi0HZFex0SHkAAAD","colors":false},{"userId":"1","socketId":"/gobang#GoAFT23AwXLkU99_AAAC","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:15:40.389] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：12504] -- 删除键成功 Key: 498328
+ [39m
+[32m  [INFO] [2020-07-25T12:16:41.090] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 3733] [进程ID：12504] -- 房间：498328游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T12:16:41.101] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：12504] -- 删除缓存498328~498328成功
+ [39m
+[32m  [INFO] [2020-07-25T12:16:41.104] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：12504] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:16:41.105] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：12504] -- 添加缓存成功 value: {"roomNum":"498328","player":[{"userId":"1","socketId":"/gobang#GoAFT23AwXLkU99_AAAC","colors":false},{"userId":"1","socketId":"/gobang#xDhnvi0HZFex0SHkAAAD","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:16:50.946] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：12504] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T12:16:52.778] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：12504] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T12:16:57.369] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：12504] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:16:57.371] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：12504] -- 添加缓存成功 value: {"roomNum":"5736734","player":[{"userId":"1","socketId":"/gobang#kc3goVwR_jE_3T_KAAAF"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:16:57.384] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：12504] -- 用户: 1 创建房间：5736734 成功
+ [39m
+[32m  [INFO] [2020-07-25T12:16:59.488] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：12504] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T12:16:59.492] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：12504] -- 删除缓存5736734~5736734成功
+ [39m
+[32m  [INFO] [2020-07-25T12:16:59.502] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：12504] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:16:59.503] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：12504] -- 添加缓存成功 value: {"roomNum":"5736734","player":[{"userId":"1","socketId":"/gobang#kc3goVwR_jE_3T_KAAAF"},{"userId":"1","socketId":"/gobang#AtKomuDVpmlftPtqAAAE"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:16:59.504] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：12504] -- 用户：1成功加入房间：5736734
+ [39m
+[32m  [INFO] [2020-07-25T12:17:02.182] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 3733] [进程ID：12504] -- 房间：5736734游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T12:17:02.184] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：12504] -- 删除缓存5736734~5736734成功
+ [39m
+[32m  [INFO] [2020-07-25T12:17:02.186] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：12504] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:17:02.187] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：12504] -- 添加缓存成功 value: {"roomNum":"5736734","player":[{"userId":"1","socketId":"/gobang#AtKomuDVpmlftPtqAAAE","colors":false},{"userId":"1","socketId":"/gobang#kc3goVwR_jE_3T_KAAAF","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:17:11.241] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：12504] -- 删除键成功 Key: 498328
+ [39m
+[32m  [INFO] [2020-07-25T12:17:32.237] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：12504] -- 删除键成功 Key: 5736734
+ [39m
+[32m  [INFO] [2020-07-25T12:18:09.852] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9596] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T12:18:11.410] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9596] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T12:18:14.047] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：9596] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:18:14.049] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：9596] -- 添加缓存成功 value: {"roomNum":"143968","player":[{"userId":"1","socketId":"/gobang#sNcRiK_NJJf7wxXfAAAC"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:18:14.060] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：9596] -- 用户: 1 创建房间：143968 成功
+ [39m
+[32m  [INFO] [2020-07-25T12:18:16.144] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：9596] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T12:18:16.146] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：9596] -- 删除缓存143968~143968成功
+ [39m
+[32m  [INFO] [2020-07-25T12:18:16.156] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：9596] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:18:16.157] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：9596] -- 添加缓存成功 value: {"roomNum":"143968","player":[{"userId":"1","socketId":"/gobang#sNcRiK_NJJf7wxXfAAAC"},{"userId":"1","socketId":"/gobang#Uh9xv0DRrCHxifGbAAAD"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:18:16.159] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：9596] -- 用户：1成功加入房间：143968
+ [39m
+[32m  [INFO] [2020-07-25T12:18:22.210] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 3733] [进程ID：9596] -- 房间：143968游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T12:18:22.212] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：9596] -- 删除缓存143968~143968成功
+ [39m
+[32m  [INFO] [2020-07-25T12:18:22.214] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：9596] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:18:22.216] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：9596] -- 添加缓存成功 value: {"roomNum":"143968","player":[{"userId":"1","socketId":"/gobang#Uh9xv0DRrCHxifGbAAAD","colors":false},{"userId":"1","socketId":"/gobang#sNcRiK_NJJf7wxXfAAAC","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:18:52.248] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：9596] -- 删除键成功 Key: 143968
+ [39m
+[32m  [INFO] [2020-07-25T12:20:38.204] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：10940] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T12:20:41.867] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：10940] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T12:20:43.874] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：10940] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T12:20:46.202] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：10940] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T12:20:49.622] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：10940] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:20:49.624] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：10940] -- 添加缓存成功 value: {"roomNum":"4961536","player":[{"userId":"1","socketId":"/gobang#uaUxh281J5u4G-lRAAAD"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:20:49.635] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：10940] -- 用户: 1 创建房间：4961536 成功
+ [39m
+[32m  [INFO] [2020-07-25T12:20:51.993] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：10940] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T12:20:51.997] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：10940] -- 删除缓存4961536~4961536成功
+ [39m
+[32m  [INFO] [2020-07-25T12:20:52.010] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：10940] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:20:52.012] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：10940] -- 添加缓存成功 value: {"roomNum":"4961536","player":[{"userId":"1","socketId":"/gobang#uaUxh281J5u4G-lRAAAD"},{"userId":"1","socketId":"/gobang#JJ3bRkKGxZ1LofH-AAAC"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:20:52.014] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：10940] -- 用户：1成功加入房间：4961536
+ [39m
+[32m  [INFO] [2020-07-25T12:20:58.254] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 3733] [进程ID：10940] -- 房间：4961536游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T12:20:58.265] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：10940] -- 删除缓存4961536~4961536成功
+ [39m
+[32m  [INFO] [2020-07-25T12:20:58.267] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：10940] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T12:20:58.268] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：10940] -- 添加缓存成功 value: {"roomNum":"4961536","player":[{"userId":"1","socketId":"/gobang#JJ3bRkKGxZ1LofH-AAAC","colors":false},{"userId":"1","socketId":"/gobang#uaUxh281J5u4G-lRAAAD","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T12:21:28.310] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：10940] -- 删除键成功 Key: 4961536
+ [39m
+[32m  [INFO] [2020-07-25T15:27:48.451] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 3937] [进程ID：9052] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:28:04.019] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 3937] [进程ID：9052] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:28:07.986] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 3937] [进程ID：9052] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:28:11.465] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：9052] -- cache 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:28:11.477] [D:\Projects\NodeJS\node\src\Dao\Mysql.ts 13345] [进程ID：9052] -- 查找数据成功,sql: select * from user where password=? and id=? sqlPara: 123,1
+ [39m
+[32m  [INFO] [2020-07-25T15:28:11.484] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9052] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T15:28:11.486] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：9052] -- cache 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:28:11.503] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：9052] -- 添加缓存成功 value: {"id":"1","password":"123","name":"王五","title":"棋场新秀","total":"00000000020","win":"00000000002","probability":0,"wealth":0}
+ [39m
+[32m  [INFO] [2020-07-25T15:28:16.137] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9052] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T15:28:23.681] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：9052] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:28:23.684] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：9052] -- 添加缓存成功 value: {"roomNum":"2368021","player":[{"userId":"1","socketId":"/gobang#VP3yc1kBuJpeqmohAAAD"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:28:23.702] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：9052] -- 用户: 1 创建房间：2368021 成功
+ [39m
+[32m  [INFO] [2020-07-25T15:28:25.569] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：9052] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T15:28:25.573] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：9052] -- 删除缓存2368021~2368021成功
+ [39m
+[32m  [INFO] [2020-07-25T15:28:25.583] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：9052] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:28:25.585] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：9052] -- 添加缓存成功 value: {"roomNum":"2368021","player":[{"userId":"1","socketId":"/gobang#VP3yc1kBuJpeqmohAAAD"},{"userId":"1","socketId":"/gobang#I7cJDjbZnudt_Oa_AAAE"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:28:25.586] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：9052] -- 用户：1成功加入房间：2368021
+ [39m
+[32m  [INFO] [2020-07-25T15:28:30.201] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 4033] [进程ID：9052] -- 房间：2368021游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T15:28:30.204] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：9052] -- 删除缓存2368021~2368021成功
+ [39m
+[32m  [INFO] [2020-07-25T15:28:30.213] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：9052] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:28:30.215] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：9052] -- 添加缓存成功 value: {"roomNum":"2368021","player":[{"userId":"1","socketId":"/gobang#I7cJDjbZnudt_Oa_AAAE","colors":false},{"userId":"1","socketId":"/gobang#VP3yc1kBuJpeqmohAAAD","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:28:42.403] [D:\Projects\NodeJS\node\src\Game\GameLogic.ts 3025] [进程ID：9052] -- false在(8,4) 落下
+ [39m
+[32m  [INFO] [2020-07-25T15:29:00.281] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：9052] -- 删除键成功 Key: 2368021
+ [39m
+[32m  [INFO] [2020-07-25T15:38:26.347] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：2436] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T15:38:28.235] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：2436] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T15:38:30.675] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：2436] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:38:30.676] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：2436] -- 添加缓存成功 value: {"roomNum":"306636","player":[{"userId":"1","socketId":"/gobang#Ca1dhT4Zxkg0XrEUAAAC"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:38:30.689] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：2436] -- 用户: 1 创建房间：306636 成功
+ [39m
+[32m  [INFO] [2020-07-25T15:38:33.609] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：2436] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T15:38:33.612] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：2436] -- 删除缓存306636~306636成功
+ [39m
+[32m  [INFO] [2020-07-25T15:38:33.623] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：2436] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:38:33.624] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：2436] -- 添加缓存成功 value: {"roomNum":"306636","player":[{"userId":"1","socketId":"/gobang#Ca1dhT4Zxkg0XrEUAAAC"},{"userId":"1","socketId":"/gobang#-o1dyqHtmfFnh57TAAAD"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:38:33.625] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：2436] -- 用户：1成功加入房间：306636
+ [39m
+[32m  [INFO] [2020-07-25T15:38:42.680] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 4033] [进程ID：2436] -- 房间：306636游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T15:38:42.681] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：2436] -- 删除缓存306636~306636成功
+ [39m
+[32m  [INFO] [2020-07-25T15:38:42.683] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：2436] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:38:42.684] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：2436] -- 添加缓存成功 value: {"roomNum":"306636","player":[{"userId":"1","socketId":"/gobang#-o1dyqHtmfFnh57TAAAD","colors":false},{"userId":"1","socketId":"/gobang#Ca1dhT4Zxkg0XrEUAAAC","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:40:18.903] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：2436] -- 删除键成功 Key: 306636
+ [39m
+[32m  [INFO] [2020-07-25T15:41:16.831] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9852] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T15:41:18.683] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9852] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T15:41:19.351] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：9852] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:41:19.353] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：9852] -- 添加缓存成功 value: {"roomNum":"1934489","player":[{"userId":"1","socketId":"/gobang#1F8Di_iWhz_77rA3AAAC"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:41:19.362] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：9852] -- 用户: 1 创建房间：1934489 成功
+ [39m
+[32m  [INFO] [2020-07-25T15:41:21.393] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：9852] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T15:41:21.397] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：9852] -- 删除缓存1934489~1934489成功
+ [39m
+[32m  [INFO] [2020-07-25T15:41:21.404] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：9852] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:41:21.406] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：9852] -- 添加缓存成功 value: {"roomNum":"1934489","player":[{"userId":"1","socketId":"/gobang#1F8Di_iWhz_77rA3AAAC"},{"userId":"1","socketId":"/gobang#ilTBh83L6UgeRSqLAAAD"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:41:21.407] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：9852] -- 用户：1成功加入房间：1934489
+ [39m
+[32m  [INFO] [2020-07-25T15:41:32.310] [D:\Projects\NodeJS\node\src\Game\GameLogic.ts 3025] [进程ID：9852] -- undefined在(1,8) 落下
+ [39m
+[32m  [INFO] [2020-07-25T15:41:32.318] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：9852] -- 删除键成功 Key: 1934489
+ [39m
+[32m  [INFO] [2020-07-25T15:43:08.364] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：12696] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T15:43:09.923] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：12696] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T15:43:11.590] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：12696] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:43:11.592] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：12696] -- 添加缓存成功 value: {"roomNum":"1158380","player":[{"userId":"1","socketId":"/gobang#_NBhYevxenTRr_J9AAAC"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:43:11.602] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：12696] -- 用户: 1 创建房间：1158380 成功
+ [39m
+[32m  [INFO] [2020-07-25T15:43:20.841] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：12696] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T15:43:20.845] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：12696] -- 删除缓存1158380~1158380成功
+ [39m
+[32m  [INFO] [2020-07-25T15:43:20.855] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：12696] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:43:20.857] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：12696] -- 添加缓存成功 value: {"roomNum":"1158380","player":[{"userId":"1","socketId":"/gobang#_NBhYevxenTRr_J9AAAC"},{"userId":"1","socketId":"/gobang#HmBaIUxzvZhHvkaeAAAD"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:43:20.859] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：12696] -- 用户：1成功加入房间：1158380
+ [39m
+[32m  [INFO] [2020-07-25T15:43:42.119] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 4033] [进程ID：12696] -- 房间：1158380游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T15:43:42.122] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：12696] -- 删除缓存1158380~1158380成功
+ [39m
+[32m  [INFO] [2020-07-25T15:43:42.132] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：12696] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:43:42.133] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：12696] -- 添加缓存成功 value: {"roomNum":"1158380","player":[{"userId":"1","socketId":"/gobang#HmBaIUxzvZhHvkaeAAAD","colors":false},{"userId":"1","socketId":"/gobang#_NBhYevxenTRr_J9AAAC","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:44:00.565] [D:\Projects\NodeJS\node\src\Game\GameLogic.ts 3025] [进程ID：12696] -- false在(12,4) 落下
+ [39m
+[32m  [INFO] [2020-07-25T15:44:12.156] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：12696] -- 删除键成功 Key: 1158380
+ [39m
+[32m  [INFO] [2020-07-25T15:50:52.876] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：10096] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T15:50:54.499] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：10096] -- 1登录成功
+ [39m
+[36m  [DEBUG] [2020-07-25T15:50:55.745] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：10096] -- rooms，分数：5573616
+ [39m
+[32m  [INFO] [2020-07-25T15:50:55.747] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：10096] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:50:55.761] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：10096] -- 添加缓存成功 value: {"roomNum":"5573616","player":[{"userId":"1","socketId":"/gobang#XSjLnoJ2GaThIkm6AAAB"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:50:55.763] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：10096] -- 用户: 1 创建房间：5573616 成功
+ [39m
+[32m  [INFO] [2020-07-25T15:50:57.361] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：10096] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T15:50:57.364] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：10096] -- 删除缓存5573616~5573616成功
+ [39m
+[36m  [DEBUG] [2020-07-25T15:50:57.372] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：10096] -- rooms，分数：5573616
+ [39m
+[32m  [INFO] [2020-07-25T15:50:57.373] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：10096] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:50:57.375] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：10096] -- 添加缓存成功 value: {"roomNum":"5573616","player":[{"userId":"1","socketId":"/gobang#XSjLnoJ2GaThIkm6AAAB"},{"userId":"1","socketId":"/gobang#v7fwRkDZm7-e_uqnAAAD"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:50:57.376] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：10096] -- 用户：1成功加入房间：5573616
+ [39m
+[32m  [INFO] [2020-07-25T15:51:01.366] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 4033] [进程ID：10096] -- 房间：5573616游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T15:51:01.367] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：10096] -- 删除缓存5573616~5573616成功
+ [39m
+[36m  [DEBUG] [2020-07-25T15:51:01.369] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：10096] -- rooms，分数：5573616
+ [39m
+[32m  [INFO] [2020-07-25T15:51:01.370] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：10096] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:51:01.372] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：10096] -- 添加缓存成功 value: {"roomNum":"5573616","player":[{"userId":"1","socketId":"/gobang#v7fwRkDZm7-e_uqnAAAD","colors":false},{"userId":"1","socketId":"/gobang#XSjLnoJ2GaThIkm6AAAB","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:51:26.300] [D:\Projects\NodeJS\node\src\Game\GameLogic.ts 3025] [进程ID：10096] -- false在(0,0) 落下
+ [39m
+[32m  [INFO] [2020-07-25T15:51:31.393] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 13021] [进程ID：10096] -- 删除键成功 Key: 5573616
+ [39m
+[32m  [INFO] [2020-07-25T15:54:10.772] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：4868] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T15:54:17.043] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：4868] -- 1登录成功
+ [39m
+[36m  [DEBUG] [2020-07-25T15:54:26.706] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：4868] -- rooms，分数：2669696
+ [39m
+[32m  [INFO] [2020-07-25T15:54:26.708] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：4868] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:54:26.715] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：4868] -- 添加缓存成功 value: {"roomNum":"2669696","player":[{"userId":"1","socketId":"/gobang#17ddz8ZLr_X2bbb1AAAC"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:54:26.722] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：4868] -- 用户: 1 创建房间：2669696 成功
+ [39m
+[36m  [DEBUG] [2020-07-25T15:54:29.489] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：4868] -- rooms，分数：2948864
+ [39m
+[32m  [INFO] [2020-07-25T15:54:29.491] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：4868] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:54:29.499] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：4868] -- 添加缓存成功 value: {"roomNum":"2948864","player":[{"userId":"1","socketId":"/gobang#UW1Wh4vBZj_W25bsAAAD"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:54:29.505] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：4868] -- 用户: 1 创建房间：2948864 成功
+ [39m
+[32m  [INFO] [2020-07-25T15:54:32.322] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：4868] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T15:54:39.513] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：4868] -- 删除缓存2669696~2669696成功
+ [39m
+[36m  [DEBUG] [2020-07-25T15:54:39.515] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：4868] -- rooms，分数：2669696
+ [39m
+[32m  [INFO] [2020-07-25T15:54:39.518] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：4868] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:54:39.531] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：4868] -- 添加缓存成功 value: {"roomNum":"2669696","player":[{"userId":"1","socketId":"/gobang#17ddz8ZLr_X2bbb1AAAC"},{"userId":"1","socketId":"/gobang#17ddz8ZLr_X2bbb1AAAC"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:54:39.533] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：4868] -- 用户：1成功加入房间：2669696
+ [39m
+[32m  [INFO] [2020-07-25T15:55:11.257] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：4868] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T15:55:13.768] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：4868] -- 删除缓存2948864~2948864成功
+ [39m
+[36m  [DEBUG] [2020-07-25T15:55:13.769] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：4868] -- rooms，分数：2948864
+ [39m
+[32m  [INFO] [2020-07-25T15:55:13.780] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：4868] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T15:55:13.782] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：4868] -- 添加缓存成功 value: {"roomNum":"2948864","player":[{"userId":"1","socketId":"/gobang#UW1Wh4vBZj_W25bsAAAD"},{"userId":"1","socketId":"/gobang#UW1Wh4vBZj_W25bsAAAD"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T15:55:13.783] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：4868] -- 用户：1成功加入房间：2948864
+ [39m
+[32m  [INFO] [2020-07-25T15:55:21.521] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：4868] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T15:55:21.522] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6937] [进程ID：4868] -- 用户：1匹配失败暂无合适房间
+ [39m
+[32m  [INFO] [2020-07-25T15:56:07.507] [D:\Projects\NodeJS\node\src\Game\GameLogic.ts 3025] [进程ID：4868] -- undefined在(10,4) 落下
+ [39m
+[32m  [INFO] [2020-07-25T15:56:07.510] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 13021] [进程ID：4868] -- 删除键成功 Key: 2948864
+ [39m
+[32m  [INFO] [2020-07-25T16:41:09.924] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：1848] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T16:41:14.787] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：1848] -- 1登录成功
+ [39m
+[36m  [DEBUG] [2020-07-25T16:41:17.251] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：1848] -- rooms，分数：1724043
+ [39m
+[32m  [INFO] [2020-07-25T16:41:17.254] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：1848] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T16:41:17.260] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：1848] -- 添加缓存成功 value: {"roomNum":"1724043","player":[{"userId":"1","socketId":"/gobang#D_vjDCJWAblNAOOaAAAC"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T16:41:17.262] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：1848] -- 用户: 1 创建房间：1724043 成功
+ [39m
+[32m  [INFO] [2020-07-25T16:41:18.842] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：1848] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T16:41:18.845] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：1848] -- 删除缓存1724043~1724043成功
+ [39m
+[36m  [DEBUG] [2020-07-25T16:41:18.853] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：1848] -- rooms，分数：1724043
+ [39m
+[32m  [INFO] [2020-07-25T16:41:18.856] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：1848] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T16:41:18.858] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：1848] -- 添加缓存成功 value: {"roomNum":"1724043","player":[{"userId":"1","socketId":"/gobang#D_vjDCJWAblNAOOaAAAC"},{"userId":"1","socketId":"/gobang#eY9mopaV0x5YFFhoAAAD"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T16:41:18.860] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：1848] -- 用户：1成功加入房间：1724043
+ [39m
+[32m  [INFO] [2020-07-25T16:41:21.721] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 4033] [进程ID：1848] -- 房间：1724043游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T16:41:21.723] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：1848] -- 删除缓存1724043~1724043成功
+ [39m
+[36m  [DEBUG] [2020-07-25T16:41:21.724] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：1848] -- rooms，分数：1724043
+ [39m
+[32m  [INFO] [2020-07-25T16:41:21.726] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：1848] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T16:41:21.727] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：1848] -- 添加缓存成功 value: {"roomNum":"1724043","player":[{"userId":"1","socketId":"/gobang#eY9mopaV0x5YFFhoAAAD","colors":false},{"userId":"1","socketId":"/gobang#D_vjDCJWAblNAOOaAAAC","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T16:41:40.774] [D:\Projects\NodeJS\node\src\Game\GameLogic.ts 3025] [进程ID：1848] -- false在(4,2) 落下
+ [39m
+[32m  [INFO] [2020-07-25T17:21:14.300] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 3937] [进程ID：14716] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:21:21.302] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 3937] [进程ID：14716] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:21:40.047] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14716] -- cache 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:21:40.059] [D:\Projects\NodeJS\node\src\Dao\Mysql.ts 13345] [进程ID：14716] -- 查找数据成功,sql: select * from user where password=? and id=? sqlPara: 123,1
+ [39m
+[36m  [DEBUG] [2020-07-25T17:21:40.062] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：14716] -- cache，分数：1
+ [39m
+[32m  [INFO] [2020-07-25T17:21:40.065] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：14716] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T17:21:40.067] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14716] -- cache 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:21:40.073] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：14716] -- 添加缓存成功 value: {"id":"1","password":"123","name":"王五","title":"棋场新秀","total":"00000000020","win":"00000000002","probability":0,"wealth":0}
+ [39m
+[32m  [INFO] [2020-07-25T17:21:42.170] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：14716] -- 1登录成功
+ [39m
+[36m  [DEBUG] [2020-07-25T17:21:44.671] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：14716] -- rooms，分数：4466924
+ [39m
+[32m  [INFO] [2020-07-25T17:21:44.674] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14716] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:21:44.680] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：14716] -- 添加缓存成功 value: {"roomNum":"4466924","player":[{"userId":"1","socketId":"/gobang#AyXOApKUNJxdgEVlAAAA"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:21:44.682] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：14716] -- 用户: 1 创建房间：4466924 成功
+ [39m
+[32m  [INFO] [2020-07-25T17:21:46.519] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：14716] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T17:21:46.522] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：14716] -- 删除缓存4466924~4466924成功
+ [39m
+[36m  [DEBUG] [2020-07-25T17:21:46.530] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：14716] -- rooms，分数：4466924
+ [39m
+[32m  [INFO] [2020-07-25T17:21:46.532] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14716] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:21:46.533] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：14716] -- 添加缓存成功 value: {"roomNum":"4466924","player":[{"userId":"1","socketId":"/gobang#AyXOApKUNJxdgEVlAAAA"},{"userId":"1","socketId":"/gobang#6mHM3NUh0IBiE5gRAAAB"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:21:46.534] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：14716] -- 用户：1成功加入房间：4466924
+ [39m
+[32m  [INFO] [2020-07-25T17:22:00.811] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 4033] [进程ID：14716] -- 房间：4466924游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T17:22:00.813] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：14716] -- 删除缓存4466924~4466924成功
+ [39m
+[36m  [DEBUG] [2020-07-25T17:22:00.815] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：14716] -- rooms，分数：4466924
+ [39m
+[32m  [INFO] [2020-07-25T17:22:00.816] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14716] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:22:00.817] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：14716] -- 添加缓存成功 value: {"roomNum":"4466924","player":[{"userId":"1","socketId":"/gobang#6mHM3NUh0IBiE5gRAAAB","colors":false},{"userId":"1","socketId":"/gobang#AyXOApKUNJxdgEVlAAAA","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:22:00.990] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 4033] [进程ID：14716] -- 房间：4466924游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T17:22:01.000] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：14716] -- 删除缓存4466924~4466924成功
+ [39m
+[36m  [DEBUG] [2020-07-25T17:22:01.002] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：14716] -- rooms，分数：4466924
+ [39m
+[32m  [INFO] [2020-07-25T17:22:01.003] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14716] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:22:01.005] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：14716] -- 添加缓存成功 value: {"roomNum":"4466924","player":[{"userId":"1","socketId":"/gobang#AyXOApKUNJxdgEVlAAAA","colors":false},{"userId":"1","socketId":"/gobang#6mHM3NUh0IBiE5gRAAAB","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:22:11.691] [D:\Projects\NodeJS\node\src\Game\GameLogic.ts 3025] [进程ID：14716] -- false在(5,3) 落下
+ [39m
+[32m  [INFO] [2020-07-25T17:22:11.693] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 13021] [进程ID：14716] -- 删除键成功 Key: 4466924
+ [39m
+[32m  [INFO] [2020-07-25T17:23:38.069] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：14304] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T17:23:40.323] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：14304] -- 1登录成功
+ [39m
+[36m  [DEBUG] [2020-07-25T17:23:43.193] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：14304] -- rooms，分数：4318469
+ [39m
+[32m  [INFO] [2020-07-25T17:23:43.195] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14304] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:23:43.201] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：14304] -- 添加缓存成功 value: {"roomNum":"4318469","player":[{"userId":"1","socketId":"/gobang#d9RCNFIJvURdRi9DAAAD"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:23:43.203] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：14304] -- 用户: 1 创建房间：4318469 成功
+ [39m
+[32m  [INFO] [2020-07-25T17:23:45.105] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：14304] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T17:23:45.108] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：14304] -- 删除缓存4318469~4318469成功
+ [39m
+[36m  [DEBUG] [2020-07-25T17:23:45.115] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：14304] -- rooms，分数：4318469
+ [39m
+[32m  [INFO] [2020-07-25T17:23:45.117] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14304] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:23:45.123] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：14304] -- 添加缓存成功 value: {"roomNum":"4318469","player":[{"userId":"1","socketId":"/gobang#d9RCNFIJvURdRi9DAAAD"},{"userId":"1","socketId":"/gobang#OKBeEptW_iXwxzcVAAAC"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:23:45.125] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：14304] -- 用户：1成功加入房间：4318469
+ [39m
+[32m  [INFO] [2020-07-25T17:23:53.204] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 4033] [进程ID：14304] -- 房间：4318469游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T17:23:53.206] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：14304] -- 删除缓存4318469~4318469成功
+ [39m
+[36m  [DEBUG] [2020-07-25T17:23:53.207] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：14304] -- rooms，分数：4318469
+ [39m
+[32m  [INFO] [2020-07-25T17:23:53.208] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14304] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:23:53.210] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：14304] -- 添加缓存成功 value: {"roomNum":"4318469","player":[{"userId":"1","socketId":"/gobang#OKBeEptW_iXwxzcVAAAC","colors":false},{"userId":"1","socketId":"/gobang#d9RCNFIJvURdRi9DAAAD","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:23:55.972] [D:\Projects\NodeJS\node\src\Game\GameLogic.ts 3025] [进程ID：14304] -- false在(9,1) 落下
+ [39m
+[32m  [INFO] [2020-07-25T17:23:55.974] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：14304] -- 删除缓存4318469~4318469成功
+ [39m
+[36m  [DEBUG] [2020-07-25T17:23:55.981] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 10421] [进程ID：14304] -- rooms，分数：4318469
+ [39m
+[32m  [INFO] [2020-07-25T17:23:55.982] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14304] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:23:55.983] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11437] [进程ID：14304] -- 添加缓存成功 value: {"roomNum":"4318469","player":[{"userId":"1","socketId":"/gobang#d9RCNFIJvURdRi9DAAAD","colors":true},{"userId":"1","socketId":"/gobang#OKBeEptW_iXwxzcVAAAC","colors":false}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,false,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:24:26.021] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 13021] [进程ID：14304] -- 删除键成功 Key: 4318469
+ [39m
+[32m  [INFO] [2020-07-25T17:35:09.492] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 3937] [进程ID：2836] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:35:41.993] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 3937] [进程ID：2836] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:35:45.271] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 3937] [进程ID：2836] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:56:44.689] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 3937] [进程ID：14068] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:56:51.860] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 3937] [进程ID：14068] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:57:20.386] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14068] -- cache 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:57:20.397] [D:\Projects\NodeJS\node\src\Dao\Mysql.ts 13345] [进程ID：14068] -- 查找数据成功,sql: select * from user where password=? and id=? sqlPara: 123,1
+ [39m
+[32m  [INFO] [2020-07-25T17:57:20.401] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：14068] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T17:57:20.403] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14068] -- cache 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:57:20.409] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：14068] -- 添加缓存成功 value: {"id":"1","password":"123","name":"王五","title":"棋场新秀","total":"00000000020","win":"00000000002","probability":0,"wealth":0}
+ [39m
+[32m  [INFO] [2020-07-25T17:57:22.707] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：14068] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-25T17:57:29.818] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14068] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:57:29.820] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：14068] -- 添加缓存成功 value: {"roomNum":"2981533","player":[{"userId":"1","socketId":"/gobang#h5svFFP5LEu95W5sAAAD"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:57:29.827] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 4029] [进程ID：14068] -- 用户: 1 创建房间：2981533 成功
+ [39m
+[32m  [INFO] [2020-07-25T17:57:32.073] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 6029] [进程ID：14068] -- 用户：1加入匹配队列
+ [39m
+[32m  [INFO] [2020-07-25T17:57:32.077] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：14068] -- 删除缓存2981533~2981533成功
+ [39m
+[32m  [INFO] [2020-07-25T17:57:32.084] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14068] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:57:32.085] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：14068] -- 添加缓存成功 value: {"roomNum":"2981533","player":[{"userId":"1","socketId":"/gobang#h5svFFP5LEu95W5sAAAD"},{"userId":"1","socketId":"/gobang#qPL_gvMbaOrw6utRAAAC"}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:57:32.086] [D:\Projects\NodeJS\node\src\Service\RoomHandle.ts 9633] [进程ID：14068] -- 用户：1成功加入房间：2981533
+ [39m
+[32m  [INFO] [2020-07-25T17:57:38.455] [D:\Projects\NodeJS\node\src\Game\GameHandle.ts 4033] [进程ID：14068] -- 房间：2981533游戏开始
+ [39m
+[32m  [INFO] [2020-07-25T17:57:38.456] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：14068] -- 删除缓存2981533~2981533成功
+ [39m
+[32m  [INFO] [2020-07-25T17:57:38.458] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14068] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:57:38.465] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：14068] -- 添加缓存成功 value: {"roomNum":"2981533","player":[{"userId":"1","socketId":"/gobang#qPL_gvMbaOrw6utRAAAC","colors":false},{"userId":"1","socketId":"/gobang#h5svFFP5LEu95W5sAAAD","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:57:44.475] [D:\Projects\NodeJS\node\src\Game\GameLogic.ts 3025] [进程ID：14068] -- false在(2,8) 落下
+ [39m
+[32m  [INFO] [2020-07-25T17:57:44.477] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：14068] -- 删除缓存2981533~2981533成功
+ [39m
+[32m  [INFO] [2020-07-25T17:57:44.483] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14068] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:57:44.484] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：14068] -- 添加缓存成功 value: {"roomNum":"2981533","player":[{"userId":"1","socketId":"/gobang#h5svFFP5LEu95W5sAAAD","colors":true},{"userId":"1","socketId":"/gobang#qPL_gvMbaOrw6utRAAAC","colors":false}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,false,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:57:52.220] [D:\Projects\NodeJS\node\src\Game\GameLogic.ts 3025] [进程ID：14068] -- true在(14,7) 落下
+ [39m
+[32m  [INFO] [2020-07-25T17:57:52.223] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：14068] -- 删除缓存2981533~2981533成功
+ [39m
+[32m  [INFO] [2020-07-25T17:57:52.232] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14068] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:57:52.234] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：14068] -- 添加缓存成功 value: {"roomNum":"2981533","player":[{"userId":"1","socketId":"/gobang#qPL_gvMbaOrw6utRAAAC","colors":false},{"userId":"1","socketId":"/gobang#h5svFFP5LEu95W5sAAAD","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,false,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,true,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:57:55.947] [D:\Projects\NodeJS\node\src\Game\GameLogic.ts 3025] [进程ID：14068] -- false在(3,4) 落下
+ [39m
+[32m  [INFO] [2020-07-25T17:57:55.950] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：14068] -- 删除缓存2981533~2981533成功
+ [39m
+[32m  [INFO] [2020-07-25T17:57:55.959] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14068] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:57:55.965] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：14068] -- 添加缓存成功 value: {"roomNum":"2981533","player":[{"userId":"1","socketId":"/gobang#h5svFFP5LEu95W5sAAAD","colors":true},{"userId":"1","socketId":"/gobang#qPL_gvMbaOrw6utRAAAC","colors":false}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,false,null,null,null,null,null,null],[null,null,null,null,false,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,true,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:57:58.907] [D:\Projects\NodeJS\node\src\Game\GameLogic.ts 3025] [进程ID：14068] -- true在(3,6) 落下
+ [39m
+[32m  [INFO] [2020-07-25T17:57:58.919] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 8933] [进程ID：14068] -- 删除缓存2981533~2981533成功
+ [39m
+[32m  [INFO] [2020-07-25T17:57:58.921] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：14068] -- rooms 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-25T17:57:58.922] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：14068] -- 添加缓存成功 value: {"roomNum":"2981533","player":[{"userId":"1","socketId":"/gobang#qPL_gvMbaOrw6utRAAAC","colors":false},{"userId":"1","socketId":"/gobang#h5svFFP5LEu95W5sAAAD","colors":true}],"chessBoard":{"chessBoard":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,false,null,null,null,null,null,null],[null,null,null,null,false,null,true,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,true,null,null,null,null,null,null,null]],"chessBoardX":[21,64,107,150,193,236,279,322,365,408,451,494,537,580,623],"chessBoardY":[321,364,407,450,493,536,579,622,665,708,751,794,837,880,923]}}
+ [39m
+[32m  [INFO] [2020-07-25T17:58:29.012] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：14068] -- 删除键成功 Key: 2981533
+ [39m

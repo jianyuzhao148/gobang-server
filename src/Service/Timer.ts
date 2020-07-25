@@ -19,7 +19,7 @@ export class Timer implements ITimer {
      * @param key 键
      */
     public setTimer(key: string): void {
-        this.cache.setLimitKey(key,"",Global.getConfig().get("game.Timer"));
+        this.cache.setLimitKey(key," ",Global.getConfig().get("game.Timer"));
     }
 
     /**

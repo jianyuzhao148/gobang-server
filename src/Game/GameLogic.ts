@@ -1,40 +1,41 @@
 import { Direction } from "./data/Direction";
 import { ChessBoard } from "./data/ChessBoard";
 import { Result } from "./data/Result";
+import { Logger } from "log4js";
+import { Global } from "../Global/Global";
 
 /**
  * 游戏逻辑
  */
 export class GameLogic {
     public chessBoard: ChessBoard;
+    private logger:Logger;
 
     public constructor(chessBoard: ChessBoard) {
         this.chessBoard = chessBoard;
+        this.logger=Global.getLogger();
     }
     /**
-     * 落子判断
-     * @param locationX 
+     * 下棋逻辑
+     * @param locationX
      * @param locationY 
+     * @param color 
      */
     public fallChess(locationX: number, locationY: number, color: boolean): any {
         let x = this.limitLocation(locationX, this.chessBoard.chessBoardX);//修正X坐标
         let y = this.limitLocation(locationY, this.chessBoard.chessBoardY);//修正Y坐标
-
-        let location = this.chessBoard.getRCInChess(x, y, color);//换算成行列
-
-        let promise = new Promise((resolve, reject) => {
-            if (this.chessBoard.chessBoard[location.row][location.column] == null) {//该位置无棋子
-                this.chessBoard.chessBoard[location.row][location.column] = color;
-                if (this.isWin(location.row, location.column)) {
-                    resolve({ 'locationX': x, 'locationY': y, "result": Result.WIN, "winner": color });//500
-                } else {
-                    resolve({ 'locationX': x, 'locationY': y, "result": Result.FALL, "state": !color });//300
-                }
+        let location = this.chessBoard.getRCInChess(x, y, color);//换算成行列{row,column}
+        if (this.chessBoard.chessBoard[location.row][location.column] == null) {//该位置无棋子
+            this.chessBoard.chessBoard[location.row][location.column] = color;
+            this.logger.info(color+"在"+"("+location.row+","+location.column+") 落下")
+            if (this.isWin(location.row, location.column)) {
+                return { 'locationX': x, 'locationY': y, "result": Result.WIN, "winner": color };//500
             } else {
-                resolve({ "result": Result.NOT });//告知操作位300
+                return { 'locationX': x, 'locationY': y, "result": Result.FALL, "state": !color };//300
             }
-        });
-        return promise;
+        } else {
+            return { "result": Result.NOT };
+        }
     }
 
     /**
@@ -69,9 +70,9 @@ export class GameLogic {
      * @param row 行
      * @param column 列 
      */
-    private getContinuity(flag: Direction, row: number, column: number): Array<boolean|null> {
+    private getContinuity(flag: Direction, row: number, column: number): Array<boolean | null> {
 
-        let tempArr: Array<boolean|null> = new Array<boolean|null>();
+        let tempArr: Array<boolean | null> = new Array<boolean | null>();
         let arr = this.chessBoard.chessBoard;
 
         if (flag == Direction.OBLIQUE) {//正斜取9位
@@ -132,7 +133,7 @@ export class GameLogic {
      * 判断连续
      * @param arr2 各4个方向的9位取值
      */
-    private isContinuity(arr: Array<boolean|null>): boolean {
+    private isContinuity(arr: Array<boolean | null>): boolean {
         let sum = 0;
         for (let i = 0; i < arr.length - 4; i++) {//后4位不用参与判断
             for (let j = i; j < arr.length; j++) {
