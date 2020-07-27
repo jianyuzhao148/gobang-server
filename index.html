@@ -90,10 +90,8 @@
             socket.emit("100", { roomNum: roomNum });
         }
 
-        function ganeRequest() {
-            let x = 21 + Math.round(Math.random() * 601);
-            let y = 321 + Math.round(Math.random() * 601);
-            socket.emit("300", { roomNum: roomNum, color: color, locationX: x, locationY: y });
+        function ganeRequest() {//模拟下棋
+            socket.emit("200", { roomNum: roomNum, color: color, locationX: 455, locationY: 345 });
         }
 
         socket.on("100", (data) => {
@@ -111,8 +109,10 @@
             }
         });
 
-        socket.on("300", (data) => {
-            if (data.result == 0) {
+        socket.on("200", (data) => {
+            if (data.result == 0) {//可落
+                clearInterval(timer)//关闭计时器
+                timers();//重启计时器
                 if (data.state == color) {//当前操作位
                     document.getElementById("gameRequst").removeAttribute("disabled");//设置按钮可用
                 } else {
@@ -121,13 +121,12 @@
             } else if (data.result == 1) {
                 alert("当前位置已有棋子不能下棋")
             }
-
         });
 
-        socket.on("500", (data) => {
+        socket.on("300", (data) => {//处理游戏结束请求
             console.log("游戏结束，" + data.winner + " 获胜")
             document.getElementById("roomNum").value = "游戏结束，" + data.winner + " 获胜";
-            clearInterval(timer)
+            clearInterval(timer)//关闭计时器
         })
 
         function timers() {//计时器

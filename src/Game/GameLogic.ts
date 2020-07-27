@@ -29,9 +29,9 @@ export class GameLogic {
             this.chessBoard.chessBoard[location.row][location.column] = color;
             this.logger.info(color+"在"+"("+location.row+","+location.column+") 落下")
             if (this.isWin(location.row, location.column)) {
-                return { 'locationX': x, 'locationY': y, "result": Result.WIN, "winner": color };//500
+                return { 'locationX': x, 'locationY': y, "result": Result.WIN, "winner": color };
             } else {
-                return { 'locationX': x, 'locationY': y, "result": Result.FALL, "state": !color };//300
+                return { 'locationX': x, 'locationY': y, "result": Result.FALL, "state": !color };
             }
         } else {
             return { "result": Result.NOT };

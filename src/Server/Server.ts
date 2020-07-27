@@ -8,6 +8,8 @@ import { ITimer } from "../Service/interface/ITimer";
 import { Timer } from "../Service/Timer";
 import { Room } from "../Service/base/Room";
 import { Result } from "../Game/data/Result";
+import { Logger } from "log4js";
+import { Global } from "../Global/Global";
 
 export class Server {
     private roomHandle: IRoomHandle;
@@ -16,6 +18,7 @@ export class Server {
     private httpServer = http.createServer();
     private timer: ITimer;
     private io: socket.Server;
+    private logger: Logger;
 
     public constructor() {
         this.io = socket(this.httpServer);
@@ -25,13 +28,15 @@ export class Server {
         this.timer = new Timer("0");
         this.httpServer.listen(8081);
         this.startWorker();
+        this.logger = Global.getLogger();
     }
 
     public async startWorker() {
         this.timer.outTimer(async (message: any) => {//避免被重复声明，或放在监听器中
             let roomObject = await this.roomHandle.getRoom(message);
             let room: Room = JSON.parse(roomObject);
-            this.io.of("gobang").to(room.roomNum).emit("500", { winner: room.player[1].colors });
+            this.io.of("gobang").to(room.roomNum).emit("300", { winner: room.player[1].colors });
+            this.gameHandle.exchangePosition(room.player);//交换操作位
             this.timer.stopTimer(message);
         });
 
@@ -62,7 +67,7 @@ export class Server {
                 this.io.of("gobang").to(roomNum).emit("4", roomNum);//广播房间消息
             });
 
-            // socket.on("5", async (data) => {
+            // socket.on("5", async (data) => {//推出
 
             // });
 
@@ -76,12 +81,15 @@ export class Server {
                 }
             });
 
-            socket.on("300", async (data) => {
-                let opationResult=await this.gameHandle.playGame(data.roomNum, data.color, data.locationX, data.locationY);
-                if(opationResult.result==Result.WIN){
-                    this.io.of("gobang").to(data.roomNum).emit("500", opationResult);//广播房间消息
+            socket.on("200", async (data) => {
+                let opationResult = await this.gameHandle.playGame(data.roomNum, data.color, data.locationX, data.locationY);
+                if (opationResult.result == Result.WIN) {
+                    this.io.of("gobang").to(data.roomNum).emit("300", opationResult);
+                } else if (opationResult.result == Result.NOT) {
+                    this.io.of("gobang").to(socket.id).emit("200", opationResult);
+                } else if (opationResult.result == Result.FALL) {
+                    this.io.of("gobang").to(data.roomNum).emit("200", opationResult);
                 }
-                this.io.of("gobang").to(data.roomNum).emit("300", opationResult);//广播房间消息
             })
         });
     }

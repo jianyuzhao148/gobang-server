@@ -7,16 +7,20 @@ import { Global } from "../Global/Global";
 import { ChessBoard } from "./data/ChessBoard";
 import { GameLogic } from "./GameLogic";
 import { Result } from "./data/Result";
+import { DataHandle } from "../Manage/DataHandle";
+import { IDataHandle } from "../Manage/interface/IDataHandle";
 
 export class GameHandle {
     private roomHandle: IRoomHandle;
     private timer: ITimer;
     private logger: Logger;
+    private dataHandle: IDataHandle;
 
     public constructor() {
         this.roomHandle = new RoomHandle();
         this.timer = new Timer("0");
         this.logger = Global.getLogger();
+        this.dataHandle = new DataHandle();
     }
 
     /**
@@ -26,7 +30,6 @@ export class GameHandle {
     public async gameStart(roomNum: string): Promise<any> {
         let promise = new Promise(async (resolve, reject) => {
             let roomObject = await this.roomHandle.getRoom(roomNum);
-            console.log(roomObject);
             let room = JSON.parse(roomObject);
             if (room.player.length >= 2) {
                 let color = this.setOrder();
@@ -74,9 +77,44 @@ export class GameHandle {
                     }
                     resolve(opationResult);
                 }
-            }else{
-                console.log();
             }
+        });
+        return promise;
+    }
+
+    /**
+     * 游戏结束,简单实现，未使用事务，风险较大
+     * 胜利方：总局数+1，胜利局数+1，胜率计算，财富计算，称号计算
+     * 失败方：总局数+1，胜率计算，财富计算，称号计算
+     * @param color
+     * @param roomNum 
+     */
+    public async gameOver(player: Array<any>): Promise<any> {//[0]是胜利位{colors，userId,socketId}
+        let promise = new Promise(async (resolve, reject) => {
+            /*
+                更新胜利玩家
+             */
+            let winnerResultString = await this.dataHandle.query("select total,win,wealth from gobang.user where id=?",
+                [player[0].userId]);
+            this.logger.debug(winnerResultString);
+            let winnerResul = JSON.parse(JSON.stringify(winnerResultString));
+            let total = winnerResul.total + 1;
+            let win = winnerResul.win + 1;
+            let wealth = winnerResul.wealth + 10;
+            await this.dataHandle.update("update set title=?,total=?,win=?,probability=?,wealth=? where id=?",
+                [1, total, win, (100 / total) * win, wealth, player[0].userId]);
+
+            /*
+                更新失败玩家
+            */
+            let loserResultString = await this.dataHandle.query("select total,win,wealth from gobang.user where id=?",
+                [player[1].userId]);
+            this.logger.debug(loserResultString);
+            let loserResult = JSON.parse(JSON.stringify(loserResultString));
+            let total2 = loserResult.total + 1;
+            let wealth2 = loserResult.wealth - 10;
+            await this.dataHandle.update("update set title=?,total=?,probability=?,wealth=? where id=?",
+                [1, total2, (100 / total2) * winnerResul.win, wealth2, player[1].userId]);
         });
         return promise;
     }
@@ -96,7 +134,7 @@ export class GameHandle {
      * 更换操作位
      * @param array 
      */
-    private exchangePosition(array: Array<any>) {
+    public exchangePosition(array: Array<any>) {
         let promise = new Promise((resolve, reject) => {
             let temp = array[0];
             array[0] = array[1];

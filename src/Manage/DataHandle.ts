@@ -48,6 +48,9 @@ export class DataHandle implements IDataHandle {
 
     /**
      * 更新数据
+     * @param sql 
+     * @param sqlParameter 
+     * @param 0/result
      */
     public update(sql: string, sqlParameter: Array<any>): Promise<any> {
         let promise = new Promise(async (resolve, reject) => {
