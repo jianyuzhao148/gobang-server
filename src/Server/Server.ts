@@ -37,6 +37,7 @@ export class Server {
             let room: Room = JSON.parse(roomObject);
             this.io.of("gobang").to(room.roomNum).emit("300", { winner: room.player[1].colors });
             this.gameHandle.exchangePosition(room.player);//交换操作位
+            this.gameHandle.gameOver(room.player)
             this.timer.stopTimer(message);
         });
 
@@ -67,9 +68,9 @@ export class Server {
                 this.io.of("gobang").to(roomNum).emit("4", roomNum);//广播房间消息
             });
 
-            // socket.on("5", async (data) => {//推出
-
-            // });
+            socket.on("5", async (data) => {//推出
+                
+            });
 
             socket.on("100", async (data) => {
                 let room = await this.gameHandle.gameStart(data.roomNum);

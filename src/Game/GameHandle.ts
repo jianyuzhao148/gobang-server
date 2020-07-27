@@ -68,7 +68,8 @@ export class GameHandle {
                     let opationResult = await gameLogic.fallChess(locationX, locationY, color);//落子结果
                     if (opationResult.result != Result.NOT) {//获取处理结果之后走一遍处理逻辑
                         if (opationResult.result == Result.WIN) {//胜利
-                            this.timer.stopTimer(room.roomNum)//关闭计时器
+                            this.timer.stopTimer(room.roomNum)//关闭计时器]
+                            this.gameOver(room.player);
                         } else {//下棋
                             this.timer.setTimer(room.roomNum);//重置计时器
                             room.player = await this.exchangePosition(room.player);//交换操作位
