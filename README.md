@@ -17,6 +17,8 @@
 
     运行时redis允许键过期通知 config set notify-keyspace-events Ex
 
+    未设置服务器主动断连
+
 消息号：
 
     登录

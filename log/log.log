@@ -3996,3 +3996,185 @@ Only strings, dates and buffers are accepted. Please update your code to use val
  [39m
 [32m  [INFO] [2020-07-27T18:55:09.118] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 12921] [进程ID：6364] -- 删除键成功 Key: 2178011
  [39m
+[36m  [DEBUG] [2020-07-29T16:42:20.290] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 5733] [进程ID：7764] -- Error: node_redis: The ZRANGEBYSCORE command contains a invalid argument type of "undefined".
+Only strings, dates and buffers are accepted. Please update your code to use valid argument types.
+    at RedisClient.internal_send_command (D:\Projects\NodeJS\node\node_modules\redis\index.js:849:37)
+    at RedisClient.zrangebyscore (D:\Projects\NodeJS\node\node_modules\redis\lib\commands.js:46:25)
+    at Redis.<anonymous> (D:\Projects\NodeJS\node\src\Dao\Redis.ts:55:30)
+    at step (D:\Projects\NodeJS\node\src\Dao\Redis.ts:52:23)
+    at Object.next (D:\Projects\NodeJS\node\src\Dao\Redis.ts:33:53)
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:27:71
+    at new Promise (<anonymous>)
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:23:12
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:54:57
+    at new Promise (<anonymous>) {
+  command: 'ZRANGEBYSCORE',
+  args: [ 'cache', undefined, undefined ]
+}
+ [39m
+[32m  [INFO] [2020-07-29T16:42:20.294] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 5833] [进程ID：7764] -- 获取缓存错误
+ [39m
+[32m  [INFO] [2020-07-29T16:42:20.337] [D:\Projects\NodeJS\node\src\Dao\Mysql.ts 13645] [进程ID：7764] -- 数据不存在,sql: select * from user where password=? and id=? sqlPara: ,
+ [39m
+[32m  [INFO] [2020-07-29T16:42:20.366] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2636] [进程ID：7764] -- undefined登录失败
+ [39m
+[36m  [DEBUG] [2020-07-29T16:44:20.578] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 5733] [进程ID：7764] -- Error: node_redis: The ZRANGEBYSCORE command contains a invalid argument type of "undefined".
+Only strings, dates and buffers are accepted. Please update your code to use valid argument types.
+    at RedisClient.internal_send_command (D:\Projects\NodeJS\node\node_modules\redis\index.js:849:37)
+    at RedisClient.zrangebyscore (D:\Projects\NodeJS\node\node_modules\redis\lib\commands.js:46:25)
+    at Redis.<anonymous> (D:\Projects\NodeJS\node\src\Dao\Redis.ts:55:30)
+    at step (D:\Projects\NodeJS\node\src\Dao\Redis.ts:52:23)
+    at Object.next (D:\Projects\NodeJS\node\src\Dao\Redis.ts:33:53)
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:27:71
+    at new Promise (<anonymous>)
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:23:12
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:54:57
+    at new Promise (<anonymous>) {
+  command: 'ZRANGEBYSCORE',
+  args: [ 'cache', undefined, undefined ]
+}
+ [39m
+[32m  [INFO] [2020-07-29T16:44:20.596] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 5833] [进程ID：7764] -- 获取缓存错误
+ [39m
+[32m  [INFO] [2020-07-29T16:44:20.604] [D:\Projects\NodeJS\node\src\Dao\Mysql.ts 13645] [进程ID：7764] -- 数据不存在,sql: select * from user where password=? and id=? sqlPara: ,
+ [39m
+[32m  [INFO] [2020-07-29T16:44:20.607] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2636] [进程ID：7764] -- undefined登录失败
+ [39m
+[36m  [DEBUG] [2020-07-29T16:44:33.226] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 5733] [进程ID：3212] -- Error: node_redis: The ZRANGEBYSCORE command contains a invalid argument type of "undefined".
+Only strings, dates and buffers are accepted. Please update your code to use valid argument types.
+    at RedisClient.internal_send_command (D:\Projects\NodeJS\node\node_modules\redis\index.js:849:37)
+    at RedisClient.zrangebyscore (D:\Projects\NodeJS\node\node_modules\redis\lib\commands.js:46:25)
+    at Redis.<anonymous> (D:\Projects\NodeJS\node\src\Dao\Redis.ts:55:30)
+    at step (D:\Projects\NodeJS\node\src\Dao\Redis.ts:52:23)
+    at Object.next (D:\Projects\NodeJS\node\src\Dao\Redis.ts:33:53)
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:27:71
+    at new Promise (<anonymous>)
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:23:12
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:54:57
+    at new Promise (<anonymous>) {
+  command: 'ZRANGEBYSCORE',
+  args: [ 'cache', undefined, undefined ]
+}
+ [39m
+[32m  [INFO] [2020-07-29T16:44:33.233] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 5833] [进程ID：3212] -- 获取缓存错误
+ [39m
+[32m  [INFO] [2020-07-29T16:44:33.246] [D:\Projects\NodeJS\node\src\Dao\Mysql.ts 13645] [进程ID：3212] -- 数据不存在,sql: select * from user where password=? and id=? sqlPara: ,
+ [39m
+[32m  [INFO] [2020-07-29T16:44:33.252] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2636] [进程ID：3212] -- undefined登录失败
+ [39m
+[36m  [DEBUG] [2020-07-29T16:46:06.861] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 5733] [进程ID：12888] -- Error: node_redis: The ZRANGEBYSCORE command contains a invalid argument type of "undefined".
+Only strings, dates and buffers are accepted. Please update your code to use valid argument types.
+    at RedisClient.internal_send_command (D:\Projects\NodeJS\node\node_modules\redis\index.js:849:37)
+    at RedisClient.zrangebyscore (D:\Projects\NodeJS\node\node_modules\redis\lib\commands.js:46:25)
+    at Redis.<anonymous> (D:\Projects\NodeJS\node\src\Dao\Redis.ts:55:30)
+    at step (D:\Projects\NodeJS\node\src\Dao\Redis.ts:52:23)
+    at Object.next (D:\Projects\NodeJS\node\src\Dao\Redis.ts:33:53)
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:27:71
+    at new Promise (<anonymous>)
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:23:12
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:54:57
+    at new Promise (<anonymous>) {
+  command: 'ZRANGEBYSCORE',
+  args: [ 'cache', undefined, undefined ]
+}
+ [39m
+[32m  [INFO] [2020-07-29T16:46:06.873] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 5833] [进程ID：12888] -- 获取缓存错误
+ [39m
+[32m  [INFO] [2020-07-29T16:46:06.882] [D:\Projects\NodeJS\node\src\Dao\Mysql.ts 13645] [进程ID：12888] -- 数据不存在,sql: select * from user where password=? and id=? sqlPara: ,
+ [39m
+[32m  [INFO] [2020-07-29T16:46:06.885] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2636] [进程ID：12888] -- undefined登录失败
+ [39m
+[36m  [DEBUG] [2020-07-29T16:46:47.267] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 5733] [进程ID：5956] -- Error: node_redis: The ZRANGEBYSCORE command contains a invalid argument type of "undefined".
+Only strings, dates and buffers are accepted. Please update your code to use valid argument types.
+    at RedisClient.internal_send_command (D:\Projects\NodeJS\node\node_modules\redis\index.js:849:37)
+    at RedisClient.zrangebyscore (D:\Projects\NodeJS\node\node_modules\redis\lib\commands.js:46:25)
+    at Redis.<anonymous> (D:\Projects\NodeJS\node\src\Dao\Redis.ts:55:30)
+    at step (D:\Projects\NodeJS\node\src\Dao\Redis.ts:52:23)
+    at Object.next (D:\Projects\NodeJS\node\src\Dao\Redis.ts:33:53)
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:27:71
+    at new Promise (<anonymous>)
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:23:12
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:54:57
+    at new Promise (<anonymous>) {
+  command: 'ZRANGEBYSCORE',
+  args: [ 'cache', undefined, undefined ]
+}
+ [39m
+[32m  [INFO] [2020-07-29T16:46:47.270] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 5833] [进程ID：5956] -- 获取缓存错误
+ [39m
+[32m  [INFO] [2020-07-29T16:46:47.288] [D:\Projects\NodeJS\node\src\Dao\Mysql.ts 13645] [进程ID：5956] -- 数据不存在,sql: select * from user where password=? and id=? sqlPara: ,
+ [39m
+[32m  [INFO] [2020-07-29T16:46:47.293] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2636] [进程ID：5956] -- undefined登录失败
+ [39m
+[36m  [DEBUG] [2020-07-29T16:48:07.887] [D:\Projects\NodeJS\node\src\Server\Server.ts 4729] [进程ID：17192] -- {"userId":1,"password":123}
+ [39m
+[36m  [DEBUG] [2020-07-29T16:48:07.896] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 5733] [进程ID：17192] -- Error: node_redis: The ZRANGEBYSCORE command contains a invalid argument type of "undefined".
+Only strings, dates and buffers are accepted. Please update your code to use valid argument types.
+    at RedisClient.internal_send_command (D:\Projects\NodeJS\node\node_modules\redis\index.js:849:37)
+    at RedisClient.zrangebyscore (D:\Projects\NodeJS\node\node_modules\redis\lib\commands.js:46:25)
+    at Redis.<anonymous> (D:\Projects\NodeJS\node\src\Dao\Redis.ts:55:30)
+    at step (D:\Projects\NodeJS\node\src\Dao\Redis.ts:52:23)
+    at Object.next (D:\Projects\NodeJS\node\src\Dao\Redis.ts:33:53)
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:27:71
+    at new Promise (<anonymous>)
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:23:12
+    at D:\Projects\NodeJS\node\src\Dao\Redis.ts:54:57
+    at new Promise (<anonymous>) {
+  command: 'ZRANGEBYSCORE',
+  args: [ 'cache', undefined, undefined ]
+}
+ [39m
+[32m  [INFO] [2020-07-29T16:48:07.903] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 5833] [进程ID：17192] -- 获取缓存错误
+ [39m
+[32m  [INFO] [2020-07-29T16:48:07.915] [D:\Projects\NodeJS\node\src\Dao\Mysql.ts 13645] [进程ID：17192] -- 数据不存在,sql: select * from user where password=? and id=? sqlPara: ,
+ [39m
+[32m  [INFO] [2020-07-29T16:48:07.923] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2636] [进程ID：17192] -- undefined登录失败
+ [39m
+[32m  [INFO] [2020-07-29T16:51:11.867] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：15628] -- cache 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-29T16:51:11.881] [D:\Projects\NodeJS\node\src\Dao\Mysql.ts 13345] [进程ID：15628] -- 查找数据成功,sql: select * from user where password=? and id=? sqlPara: 123,1
+ [39m
+[32m  [INFO] [2020-07-29T16:51:11.890] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：15628] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T16:51:11.892] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 6437] [进程ID：15628] -- cache 缓存数为0
+ [39m
+[32m  [INFO] [2020-07-29T16:51:11.895] [D:\Projects\NodeJS\node\src\Dao\Redis.ts 11337] [进程ID：15628] -- 添加缓存成功 value: {"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}
+ [39m
+[32m  [INFO] [2020-07-29T17:13:10.978] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：15628] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:14:31.070] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：15628] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:16:15.764] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：15628] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:18:34.380] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：15628] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:19:00.414] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9264] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:34:39.437] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9264] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:35:10.604] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9864] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:37:43.074] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9864] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:52:19.416] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17424] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:52:20.194] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17424] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:52:20.344] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17424] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:52:20.489] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17424] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:52:20.633] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17424] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:52:20.761] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17424] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:53:44.626] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17424] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:53:44.970] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17424] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:53:45.121] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17424] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T17:53:45.242] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17424] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-07-29T18:13:06.328] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17424] -- 1登录成功
+ [39m
