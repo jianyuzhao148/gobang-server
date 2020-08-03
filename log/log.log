@@ -4178,3 +4178,386 @@ Only strings, dates and buffers are accepted. Please update your code to use val
  [39m
 [32m  [INFO] [2020-07-29T18:13:06.328] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17424] -- 1登录成功
  [39m
+[32m  [INFO] [2020-08-03T11:35:37.567] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T11:36:52.643] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:02:38.415] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:02:49.072] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:03:04.057] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:03:24.209] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:03:29.344] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:03:40.279] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:03:45.233] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:04:01.202] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:05:37.205] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:33:00.803] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:33:43.771] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:37:20.622] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:37:46.603] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:38:58.874] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:40:23.776] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:40:32.021] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:40:55.569] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:41:02.708] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:41:11.470] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:41:14.371] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：7368] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:43:01.936] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:43:10.885] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:43:14.102] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:43:39.068] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:43:41.678] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:43:51.804] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:43:55.206] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:44:00.551] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:44:03.889] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:44:15.287] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:44:29.813] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:44:35.809] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:44:49.716] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:44:54.075] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:44:57.280] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:45:01.586] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:45:32.958] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:45:40.046] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:45:54.778] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:45:58.459] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:46:04.896] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:46:17.209] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:46:19.095] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:46:20.335] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:46:21.446] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:46:22.949] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:46:30.779] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:47:16.273] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:47:18.326] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:47:20.244] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:50:19.756] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:50:23.406] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:50:27.160] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:50:41.760] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:50:45.433] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:50:53.843] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19324] -- 1登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T12:52:08.190] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：852] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T12:52:08.192] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2436] [进程ID：852] -- 1登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T12:52:43.141] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：20764] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T12:52:43.143] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2436] [进程ID：20764] -- 1登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T12:53:04.124] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：16664] -- {"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}
+ [39m
+[32m  [INFO] [2020-08-03T12:53:04.126] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2436] [进程ID：16664] -- 1登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T12:53:34.413] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：16664] -- {"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}
+ [39m
+[32m  [INFO] [2020-08-03T12:53:34.416] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2436] [进程ID：16664] -- 1登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T12:53:46.145] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：16664] -- {"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}
+ [39m
+[32m  [INFO] [2020-08-03T12:53:46.146] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2436] [进程ID：16664] -- 1登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T12:53:53.329] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：16664] -- {"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}
+ [39m
+[32m  [INFO] [2020-08-03T12:53:53.330] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2436] [进程ID：16664] -- 1登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T12:53:57.212] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：16664] -- {"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}
+ [39m
+[32m  [INFO] [2020-08-03T12:53:57.213] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2436] [进程ID：16664] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:55:21.707] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9656] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:55:24.772] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9656] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:55:36.027] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9656] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:55:38.482] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9656] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:55:39.922] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9656] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:56:56.835] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9656] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:56:59.602] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9656] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:57:06.749] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9656] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:57:08.774] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9656] -- 1登录成功
+ [39m
+[32m  [INFO] [2020-08-03T12:59:03.326] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：19208] -- 1登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T12:59:03.332] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：19208] -- {"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}
+ [39m
+[32m  [INFO] [2020-08-03T12:59:49.328] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：9364] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T12:59:49.334] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：9364] -- {"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}
+ [39m
+[32m  [INFO] [2020-08-03T13:00:42.218] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：15724] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T13:00:42.224] [D:\Projects\NodeJS\node\src\Server\Server.ts 5036] [进程ID：15724] -- {
+  id: '1',
+  password: '123',
+  name: '王五',
+  title: '1',
+  total: '00000000021',
+  win: '00000000003',
+  probability: 0,
+  wealth: 1
+}
+ [39m
+[32m  [INFO] [2020-08-03T13:02:15.272] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T13:02:15.279] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T13:02:27.080] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T13:02:27.081] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T13:02:30.961] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T13:02:30.962] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T13:06:01.303] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T13:06:01.305] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T13:41:18.816] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T13:41:18.817] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T13:44:46.964] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T13:44:46.965] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T15:37:19.948] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T15:37:19.952] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T15:37:53.014] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T15:37:53.017] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T15:37:57.294] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T15:37:57.296] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T15:40:58.731] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T15:40:58.732] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T16:42:09.761] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T16:42:09.763] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T16:47:02.091] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T16:47:02.092] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:07:38.990] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:07:38.992] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:07:41.574] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:07:41.575] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:08:06.369] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:08:06.370] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:13:58.222] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:13:58.224] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:14:14.593] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:14:14.594] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:14:28.072] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:14:28.074] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:22:36.294] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:22:36.296] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:22:41.935] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:22:41.936] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:24:09.462] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:24:09.464] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:24:49.372] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:24:49.374] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:26:53.624] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:26:53.626] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:29:53.888] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:29:53.890] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:50:42.990] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:50:42.991] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T17:51:59.379] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：22024] -- undefined登录成功
+ [39m
+[91m  [ERROR] [2020-08-03T17:51:59.381] [D:\Projects\NodeJS\node\src\Server\Server.ts 4936] [进程ID：22024] -- [
+  '{"id":"1","password":"123","name":"王五","title":"1","total":"00000000021","win":"00000000003","probability":0,"wealth":1}'
+]
+ [39m
+[32m  [INFO] [2020-08-03T18:33:37.720] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:35:57.075] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:37:45.828] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:38:27.047] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:39:58.682] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:40:31.464] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:42:42.047] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:42:49.186] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:42:55.927] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:43:14.108] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:43:24.637] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:47:48.220] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:47:50.731] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:48:01.358] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:48:25.040] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:48:27.455] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:48:48.030] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:51:06.624] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:51:09.021] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m
+[32m  [INFO] [2020-08-03T18:51:10.519] [D:\Projects\NodeJS\node\src\Game\LoginHandle.ts 2336] [进程ID：17360] -- undefined登录成功
+ [39m

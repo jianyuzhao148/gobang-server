@@ -45,7 +45,8 @@ export class Server {
 
             socket.on("0", async (data) => {//登陆响应
                 let dataJson=JSON.parse(data);
-                this.io.of("gobang").to(socket.id).emit("0", await this.loginHandle.login(dataJson.userId, dataJson.password));
+                let userInfo=await this.loginHandle.login(dataJson.userId, dataJson.password);
+                this.io.of("gobang").to(socket.id).emit("0", userInfo);
             });
 
             socket.on("1", async (data) => {

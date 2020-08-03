@@ -20,7 +20,7 @@ export class LoginHandle {
             let i = await this.dataHandle.query("select * from user where password=? and id=?", [password,userId])
             if (i != 0) {
                 resolve(i);
-                Global.getLogger().info(userId + "登录成功");
+                Global.getLogger().info(i.id + "登录成功");
             } else {
                 resolve(0);
                 Global.getLogger().info(userId + "登录失败");
